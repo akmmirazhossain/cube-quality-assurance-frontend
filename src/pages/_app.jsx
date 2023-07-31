@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import '../i18n/config';
-import '../styles/global.css';
+import '../styles/globals.css';
 import Layout from '../layout/base';
 
 const App = ({ Component, pageProps }) => {
