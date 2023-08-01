@@ -10,6 +10,8 @@ import {
 	SupervisorIcon,
 } from '../../public/images';
 
+import { Adobe, Apple, Mango, Oasis, Partners } from '../../public/images';
+
 export const HEADER_HEIGHT = 300;
 
 export const NavList = [
@@ -100,5 +102,49 @@ export const AppModuleList = [
 		inspection plan and carry 
 		out inspection off-line`,
 		icon: InspectorMobileAppIcon,
+	},
+];
+
+export const PartnersList = [
+	{
+		id: 1,
+		icon: Partners,
+	},
+	{
+		id: 2,
+		icon: Apple,
+	},
+	{
+		id: 3,
+		icon: Adobe,
+	},
+	{
+		id: 4,
+		icon: Mango,
+	},
+	{
+		id: 5,
+		icon: Oasis,
+	},
+];
+
+export const WhatEveryonesSayingList = [
+	{
+		id: 1,
+		quote:
+			'The team prioritised our company’s needs and provided us with exactly the right product enhancemenmts that we needed.',
+		identity: 'Jay Chase, Founder @The Freelancing Institution',
+	},
+	{
+		id: 2,
+		quote:
+			'The team prioritised our company’s needs and provided us with exactly the right product enhancemenmts that we needed.',
+		identity: 'Jay Chase, Founder @The Freelancing Institution',
+	},
+	{
+		id: 3,
+		quote:
+			'The team prioritised our company’s needs and provided us with exactly the right product enhancemenmts that we needed.',
+		identity: 'Jay Chase, Founder @The Freelancing Institution',
 	},
 ];

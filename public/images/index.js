@@ -12,6 +12,11 @@ import DistributorIcon from './icon/Distributor.png';
 import InspectorMobileAppIcon from './icon/InspectorMobileApp.png';
 import Person from './Person.png';
 import LowerSectionVArt from './icon/LowerSectionVArt.png';
+import Adobe from './icon/Adobe.png';
+import Apple from './icon/Apple.png';
+import Mango from './icon/Mango.png';
+import Oasis from './icon/Oasis.png';
+import Partners from './icon/Partners.png';
 
 export {
 	Logo,
@@ -28,4 +33,9 @@ export {
 	InspectorMobileAppIcon,
 	Person,
 	LowerSectionVArt,
+	Adobe,
+	Apple,
+	Mango,
+	Oasis,
+	Partners,
 };
