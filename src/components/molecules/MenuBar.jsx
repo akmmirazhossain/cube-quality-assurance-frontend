@@ -68,7 +68,7 @@ const MenuBar = () => {
           } md:hidden absolute right-0 top-16 w-full pt-2 z-auto`}
         > */}
 
-				<div className="bg-primary flex pb-3 sm:px-3">
+				<div className="flex bg-primary pb-3 sm:px-3">
 					{NavList.map((item, index) => (
 						<div
 							key={item.id}
