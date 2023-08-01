@@ -2,11 +2,12 @@ import Image from 'next/image';
 import React from 'react';
 import { DesktopClickIcon } from '../../../public/images';
 import { Button } from '../atoms/Button';
+import Heading from '../atoms/Heading';
 
 const AppModuleHeaderItem = () => {
 	return (
 		<div className="mx-auto h-[405px] w-[953px] pl-5">
-			<div className=" grid h-full w-full grid-flow-col grid-cols-2 gap-5">
+			<div className=" grid h-full w-full grid-flow-row grid-cols-1 gap-5 md:grid-cols-2">
 				<div className="flex place-items-center justify-center">
 					<div className="h-[303px] w-[303px] rounded-full bg-secondary p-4">
 						<div className="flex h-full w-full place-items-center justify-center align-middle">
@@ -28,7 +29,7 @@ const AppModuleHeaderItem = () => {
 				</div>
 
 				<div className="h-full w-full">
-					<h1 className="text-5xl font-medium text-secondary">Apps Module</h1>
+					<Heading variant={'secondary'}>Apps Module</Heading>
 					<div className="py-4">
 						<p className=" text-2xl font-light leading-[38px] text-secondary">
 							Our team of experienced professionals is dedicated to helping businesses achieve their

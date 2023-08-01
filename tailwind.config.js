@@ -32,7 +32,6 @@ module.exports = {
 				solitude: '#E8E9EC',
 				white: '#FFFFFF',
 				dark: '#23252D',
-				'': '#523249',
 			},
 		},
 	},
