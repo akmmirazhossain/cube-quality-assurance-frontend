@@ -10,6 +10,7 @@ import AddonsIcon from './icon/Addons.png';
 import LegalIcon from './icon/Legal.png';
 import DistributorIcon from './icon/Distributor.png';
 import InspectorMobileAppIcon from './icon/InspectorMobileApp.png';
+import Person from './Person.png';
 import LowerSectionVArt from './icon/LowerSectionVArt.png';
 
 export {
@@ -25,5 +26,6 @@ export {
 	LegalIcon,
 	DistributorIcon,
 	InspectorMobileAppIcon,
+	Person,
 	LowerSectionVArt,
 };
