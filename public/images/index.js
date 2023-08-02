@@ -27,6 +27,9 @@ import Email from './social/Email.png';
 import Phone from './social/Phone.png';
 import WhatsApp from './social/WhatsApp.png';
 
+//Shapes
+import HalfRound from './shapes/HalfRound.png';
+
 export {
 	Logo,
 	LogoBack,
@@ -53,4 +56,5 @@ export {
 	Email,
 	Phone,
 	WhatsApp,
+	HalfRound,
 };
