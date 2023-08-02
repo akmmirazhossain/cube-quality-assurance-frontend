@@ -18,12 +18,12 @@ const FooterServices = () => {
 				<div className="mt-14">
 					<Listbox value={LanguageList} onChange={setSelectedLanguage}>
 						<Listbox.Button className={`flex place-items-center gap-3 align-middle`}>
-							<LanguageItem item={selectedLanguage} />
+							<LanguageItem item={selectedLanguage} showTitle={true} />
 						</Listbox.Button>
 						<Listbox.Options>
 							{LanguageList.map((item) => (
 								<Listbox.Option key={item.id} value={item}>
-									<LanguageItem item={item} />
+									<LanguageItem item={item} showTitle={true} />
 								</Listbox.Option>
 							))}
 						</Listbox.Options>

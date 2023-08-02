@@ -31,6 +31,7 @@ module.exports = {
 				secondary: '#523249',
 				solitude: '#E8E9EC',
 				white: '#FFFFFF',
+				offWhite: '#F4F4F4',
 				dark: '#23252D',
 			},
 		},

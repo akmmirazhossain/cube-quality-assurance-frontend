@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react';
-import { FooterServices, LanguageItem } from '../organisms';
+import React from 'react';
+import { FooterServices } from '../organisms';
 import { FooterAboutUs } from '../organisms/FooterAboutUs';
 import { Logo } from '../../../public/images';
 import { FooterSocialList } from '@/constants/constants';

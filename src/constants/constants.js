@@ -23,7 +23,18 @@ import {
 export const HEADER_HEIGHT = 300;
 
 export const NavList = [
-	{ id: 1, path: '/', name: 'App Modules' },
+	{
+		id: 1,
+		path: '/',
+		name: 'App Modules',
+		submenu: [
+			{ id: 11, path: '/tutorials', name: 'Tutorials' },
+			{ id: 12, path: '/who-we-are', name: 'Documentation' },
+			{ id: 13, path: '/support-form', name: 'Support form' },
+			{ id: 14, path: '/find-a-partner', name: 'Find a partner' },
+			{ id: 15, path: '/meet-an-expert', name: 'Meet an expert' },
+		],
+	},
 	{
 		id: 2,
 		path: '#',
@@ -37,7 +48,18 @@ export const NavList = [
 		],
 	},
 	{ id: 3, path: '/about-us', name: 'About Us' },
-	{ id: 4, path: '/contact', name: 'Contact' },
+	{
+		id: 4,
+		path: '/contact',
+		name: 'Contact',
+		submenu: [
+			{ id: 41, path: '/tutorials', name: 'Tutorials' },
+			{ id: 42, path: '/who-we-are', name: 'Documentation' },
+			{ id: 43, path: '/support-form', name: 'Support form' },
+			{ id: 44, path: '/find-a-partner', name: 'Find a partner' },
+			{ id: 45, path: '/meet-an-expert', name: 'Meet an expert' },
+		],
+	},
 ];
 export const AppModuleList = [
 	{
