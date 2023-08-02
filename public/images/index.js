@@ -1,5 +1,7 @@
 import LogoBack from './LogoBack.png';
-import Logo from './Logo.png';
+import Logo from './logo.png';
+import LogoSecondaryIcon from './LogoSecondary.png';
+
 import DesktopClickIcon from './icon/DesktopClick.png';
 import CompanyAdminIcon from './icon/CompanyAdmin.png';
 import InspectionManagerIcon from './icon/InspectionManager.png';
@@ -12,10 +14,26 @@ import DistributorIcon from './icon/Distributor.png';
 import InspectorMobileAppIcon from './icon/InspectorMobileApp.png';
 import Person from './Person.png';
 import LowerSectionVArt from './icon/LowerSectionVArt.png';
+import English from './language/English.png';
+import Arabic from './language/Arabic.png';
+
+// Social Icon
+import Facebook from './social/Facebook.png';
+import Twitter from './social/Twitter.png';
+import LinkedIn from './social/LinkedIn.png';
+import GitHub from './social/GitHub.png';
+import Instagram from './social/Instagram.png';
+import Email from './social/Email.png';
+import Phone from './social/Phone.png';
+import WhatsApp from './social/WhatsApp.png';
+
+//Shapes
+import HalfRound from './shapes/HalfRound.png';
 
 export {
 	Logo,
 	LogoBack,
+	LogoSecondaryIcon,
 	DesktopClickIcon,
 	CompanyAdminIcon,
 	InspectionManagerIcon,
@@ -28,4 +46,15 @@ export {
 	InspectorMobileAppIcon,
 	Person,
 	LowerSectionVArt,
+	English,
+	Arabic,
+	Facebook,
+	Twitter,
+	LinkedIn,
+	GitHub,
+	Instagram,
+	Email,
+	Phone,
+	WhatsApp,
+	HalfRound,
 };

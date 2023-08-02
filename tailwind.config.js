@@ -26,11 +26,16 @@ module.exports = {
 				'2xl': '1536px',
 				// => @media (min-width: 1536px) { ... }
 			},
+			backgroundImage: {
+				inspectionModule: "url('/images/hero/InspectionModuleHero.png')",
+			},
 			colors: {
 				primary: '#077D83',
 				secondary: '#523249',
+				eminence: '#683E76',
 				solitude: '#E8E9EC',
 				white: '#FFFFFF',
+				offWhite: '#F4F4F4',
 				dark: '#23252D',
 			},
 		},
