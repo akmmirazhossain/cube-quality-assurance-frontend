@@ -133,18 +133,18 @@ export const WhatEveryonesSayingList = [
 		id: 1,
 		quote:
 			'The team prioritised our company’s needs and provided us with exactly the right product enhancemenmts that we needed.',
-		identity: 'Jay Chase, Founder @The Freelancing Institution',
+		identity: 'Jay Chase, Founder <br/>@The Freelancing Institution',
 	},
 	{
 		id: 2,
 		quote:
 			'The team prioritised our company’s needs and provided us with exactly the right product enhancemenmts that we needed.',
-		identity: 'Jay Chase, Founder @The Freelancing Institution',
+		identity: 'Jay Chase, Founder <br/> @The Freelancing Institution',
 	},
 	{
 		id: 3,
 		quote:
 			'The team prioritised our company’s needs and provided us with exactly the right product enhancemenmts that we needed.',
-		identity: 'Jay Chase, Founder @The Freelancing Institution',
+		identity: 'Jay Chase, Founder <br/> @The Freelancing Institution',
 	},
 ];
