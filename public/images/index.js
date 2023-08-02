@@ -1,5 +1,7 @@
 import LogoBack from './LogoBack.png';
-import Logo from './Logo.png';
+import Logo from './logo.png';
+import LogoSecondaryIcon from './LogoSecondary.png';
+
 import DesktopClickIcon from './icon/DesktopClick.png';
 import CompanyAdminIcon from './icon/CompanyAdmin.png';
 import InspectionManagerIcon from './icon/InspectionManager.png';
@@ -28,6 +30,7 @@ import WhatsApp from './social/WhatsApp.png';
 export {
 	Logo,
 	LogoBack,
+	LogoSecondaryIcon,
 	DesktopClickIcon,
 	CompanyAdminIcon,
 	InspectionManagerIcon,

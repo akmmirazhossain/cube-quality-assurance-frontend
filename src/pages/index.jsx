@@ -6,7 +6,6 @@ const HomePage = () => {
 		<>
 			<HeroSection />
 			<AppModules />
-			<Footer />
 		</>
 	);
 };
