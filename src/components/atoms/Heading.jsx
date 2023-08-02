@@ -1,7 +1,7 @@
 import { cva } from 'class-variance-authority';
 import React from 'react';
 
-const headerDesign = cva('text-primary', {
+const headerDesign = cva('leading-normal', {
 	variants: {
 		variant: {
 			primary: 'text-primary',
@@ -14,6 +14,7 @@ const headerDesign = cva('text-primary', {
 		},
 		weight: {
 			medium: 'font-medium',
+			normal: 'font-normal',
 			light: 'font-light',
 		},
 	},

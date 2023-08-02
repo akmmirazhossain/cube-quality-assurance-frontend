@@ -29,9 +29,9 @@ const MenuBar = () => {
 								onMouseEnter={() => toggleSubmenu(item.id)}
 								onMouseLeave={() => toggleSubmenu(item.id)}
 							>
-								<div className="flex place-items-center justify-center gap-2 py-2 text-base">
+								<div className="flex place-items-center justify-center gap-2 py-2 text-sm">
 									<Link
-										className="block  font-medium text-secondary hover:text-primary"
+										className="block font-normal text-secondary hover:text-primary"
 										href={item.path}
 									>
 										{item.name}
@@ -56,7 +56,7 @@ const MenuBar = () => {
 													<div className="flex place-items-center justify-center">
 														<Link
 															href={subitem.path}
-															className="block px-4 py-1 text-base text-primary hover:text-secondary"
+															className="block px-4 py-1 text-xs font-normal text-primary hover:text-secondary"
 														>
 															{subitem.name}
 														</Link>

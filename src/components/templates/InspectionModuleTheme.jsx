@@ -21,9 +21,10 @@ const InspectionModuleTheme = () => {
 					</div>
 					<div className="relative h-full w-full bg-primary md:w-[60%] md:rounded-r-3xl">
 						<div className="relative w-full space-y-10 p-10 text-white md:left-20 md:top-24 md:max-w-[470px] md:p-0">
-							<h1 className="text-2xl md:text-5xl">
-								No need to be a developer - simply drag and drop
-							</h1>
+							<div className="text-2xl md:text-5xl">
+								<h1 className="font-medium">No need to be a developer - simply</h1>
+								<h1 className="font-light">drag and drop</h1>
+							</div>
 							<div className="top-10 h-full w-full text-xl font-thin md:relative md:top-20 md:pr-8 md:text-2xl">
 								<p>
 									QA comes with a great selection of building blocks. Drag and drop them to create
