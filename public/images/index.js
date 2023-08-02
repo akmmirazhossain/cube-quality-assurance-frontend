@@ -1,5 +1,7 @@
 import LogoBack from './LogoBack.png';
-import Logo from './Logo.png';
+import Logo from './logo.png';
+import LogoSecondaryIcon from './LogoSecondary.png';
+
 import DesktopClickIcon from './icon/DesktopClick.png';
 import CompanyAdminIcon from './icon/CompanyAdmin.png';
 import InspectionManagerIcon from './icon/InspectionManager.png';
@@ -17,10 +19,23 @@ import Apple from './icon/Apple.png';
 import Mango from './icon/Mango.png';
 import Oasis from './icon/Oasis.png';
 import Partners from './icon/Partners.png';
+import English from './language/English.png';
+import Arabic from './language/Arabic.png';
+
+// Social Icon
+import Facebook from './social/Facebook.png';
+import Twitter from './social/Twitter.png';
+import LinkedIn from './social/LinkedIn.png';
+import GitHub from './social/GitHub.png';
+import Instagram from './social/Instagram.png';
+import Email from './social/Email.png';
+import Phone from './social/Phone.png';
+import WhatsApp from './social/WhatsApp.png';
 
 export {
 	Logo,
 	LogoBack,
+	LogoSecondaryIcon,
 	DesktopClickIcon,
 	CompanyAdminIcon,
 	InspectionManagerIcon,
@@ -38,4 +53,14 @@ export {
 	Mango,
 	Oasis,
 	Partners,
+	English,
+	Arabic,
+	Facebook,
+	Twitter,
+	LinkedIn,
+	GitHub,
+	Instagram,
+	Email,
+	Phone,
+	WhatsApp,
 };

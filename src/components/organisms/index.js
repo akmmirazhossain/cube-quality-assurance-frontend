@@ -1,4 +1,4 @@
 import AppModuleHeaderItem from './AppModuleHeaderItem';
 import AppModuleListItem from './AppModuleListItem';
-
-export { AppModuleHeaderItem, AppModuleListItem };
+import FooterServices from './FooterServices';
+export { AppModuleHeaderItem, AppModuleListItem, FooterServices };

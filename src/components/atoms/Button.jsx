@@ -1,8 +1,8 @@
 import { cn } from '@/constants/utils';
 import { cva } from 'class-variance-authority';
 import Link from 'next/link';
-import React, { Children } from 'react';
-const buttonVariant = cva('border-0 rounded-lg text-base text-white font-medium', {
+import React from 'react';
+const buttonVariant = cva('border-0 rounded-lg text-base text-white font-medium h-auto', {
 	variants: {
 		variant: {
 			primary: 'bg-primary',
@@ -21,13 +21,13 @@ const buttonVariant = cva('border-0 rounded-lg text-base text-white font-medium'
 const Button = ({ className, children, href, variant, size, ...props }) => {
 	if (href) {
 		return (
-			<Link href={href} className={buttonVariant({ variant, size, className })}>
+			<Link href={href} className={cn(buttonVariant({ variant, size, className }))}>
 				{children}
 			</Link>
 		);
 	}
 	return (
-		<button type="button" className={buttonVariant({ variant, size, className })} {...props}>
+		<button type="button" className={cn(buttonVariant({ variant, size, className }))} {...props}>
 			{children}
 		</button>
 	);
