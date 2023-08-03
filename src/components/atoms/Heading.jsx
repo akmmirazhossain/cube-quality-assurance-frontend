@@ -9,7 +9,7 @@ const headerDesign = cva('leading-normal', {
 			white: 'text-white',
 		},
 		size: {
-			lg: 'text-5xl',
+			lg: 'text-2xl md:text-5xl',
 			md: 'text-[32px]',
 		},
 		weight: {
