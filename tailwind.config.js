@@ -28,6 +28,7 @@ module.exports = {
 			},
 			backgroundImage: {
 				inspectionModule: "url('/images/hero/InspectionModuleHero.png')",
+				enterpriseHero: "url('/images/hero/Enterprise-Hero.png')",
 			},
 			colors: {
 				primary: '#077D83',

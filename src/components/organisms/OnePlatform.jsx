@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import { DesktopClickIcon } from '../../../public/images';
 import { Button } from '../atoms/Button';
 import { LowerSectionVArt } from '../../../public/images';
 
