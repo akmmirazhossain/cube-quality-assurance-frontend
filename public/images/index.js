@@ -31,7 +31,8 @@ import WhatsApp from './social/WhatsApp.png';
 import HalfRound from './shapes/HalfRound.png';
 
 //inspection manager moduel page images
-import MacbookPro from './mackbook-pro.png';
+import MacbookPro from './macbook-pro.png';
+import MacbookProEnterprise from './macbook-pro-enterprise.png';
 
 export {
 	Logo,
@@ -61,4 +62,5 @@ export {
 	WhatsApp,
 	HalfRound,
 	MacbookPro,
+	MacbookProEnterprise,
 };

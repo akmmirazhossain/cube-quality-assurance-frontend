@@ -2,23 +2,13 @@ import Image from 'next/image';
 import React from 'react';
 import { MacbookPro } from '../../../public/images';
 import { BsFillPlayCircleFill } from 'react-icons/bs';
+import ThemeEnterpriseVideo from '../molecules/ThemeEnterpriseVideo';
 const InspectionModuleTheme = () => {
 	return (
 		<>
 			<div className="relative h-full w-full p-10 md:h-[745px] md:p-0">
 				<div className="relative h-full w-full">
-					<div className="relative bottom-3 z-10 flex h-full w-full place-items-center justify-end pr-0 md:absolute md:bottom-0 md:pr-10">
-						<div className="relative">
-							<div className="trnslate-y-[50%] absolute left-[50%]  top-[50%] -mt-5 -translate-x-[50%] md:-mt-12">
-								<div className="flex h-12 w-12 place-items-center justify-center rounded-full border-transparent bg-white md:h-20 md:w-20">
-									<button className="h-full w-full border-transparent text-primary">
-										<BsFillPlayCircleFill className="h-full w-full" />
-									</button>
-								</div>
-							</div>
-							<Image src={MacbookPro} className="h-full w-full" alt="video module" />
-						</div>
-					</div>
+					<ThemeEnterpriseVideo image={MacbookPro} />
 					<div className="relative h-full w-full bg-primary md:w-[60%] md:rounded-r-3xl">
 						<div className="relative w-full space-y-10 p-10 text-white md:left-20 md:top-24 md:max-w-[470px] md:p-0">
 							<div className="text-2xl md:text-5xl">
