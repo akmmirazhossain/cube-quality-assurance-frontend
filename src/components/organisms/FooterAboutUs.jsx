@@ -10,7 +10,7 @@ export const FooterAboutUs = () => {
 			<div className="my-3">
 				<ul className="grid gap-2">
 					{FooterAboutUsNavLinklist.map(({ id, title, href }) => (
-						<FooterItemLink id={id} href={href} title={title} />
+						<FooterItemLink key={id} href={href} title={title} />
 					))}
 				</ul>
 			</div>

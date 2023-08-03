@@ -8,11 +8,9 @@ const WhoWeAre = () => {
 		<div className="realative mx-auto my-16 w-[80%]">
 			<div className="grid grid-flow-row grid-cols-1 md:grid-cols-3">
 				<div className="col-span-2">
+					<Heading variant={'secondary'}>Who we are...</Heading>
 					<Heading variant={'secondary'} weight={'light'}>
-						Who we are...
-					</Heading>
-					<Heading variant={'secondary'} weight={'light'} className={`font-thin leading-[61px]`}>
-						... innovators in a<br /> changing world.{' '}
+						... innovators in a<br /> changing world.
 					</Heading>
 					<p className="text-[24px] font-light leading-[38px] text-secondary">
 						Developed 2 years ago, we are a team of 10 inspired individuals with a mission has
