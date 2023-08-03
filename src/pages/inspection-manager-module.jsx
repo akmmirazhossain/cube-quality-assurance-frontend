@@ -1,6 +1,5 @@
 import InspectionModuleHero from '@/components/templates/InspectionModuleHero';
 import InspectionModuleTheme from '@/components/templates/InspectionModuleTheme';
-import React from 'react';
 
 const InspectionManagerModule = () => {
 	return (
