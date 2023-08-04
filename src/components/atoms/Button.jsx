@@ -7,6 +7,7 @@ const buttonVariant = cva('border-0 rounded-lg text-base text-white font-medium 
 		variant: {
 			primary: 'bg-primary',
 			secondary: 'bg-secondary',
+			danger: 'bg-red-700',
 		},
 		size: {
 			small: 'py-[11px] px-[21px]',

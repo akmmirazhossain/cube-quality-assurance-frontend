@@ -1,10 +1,8 @@
 import React from 'react';
-import { AppModuleHeaderItem, AppModuleListItem } from '../organisms';
 import AppModulePlans from '../organisms/AppModulePlans';
-import Heading from '../atoms/Heading';
-import Image from 'next/image';
-import { Person } from '../../../public/images';
 import WhoWeAre from '../organisms/WhoWeAre';
+import AppModuleHeaderItem from '../organisms/AppModuleHeaderItem';
+import AppModuleListItem from '../organisms/AppModuleListItem';
 
 const AppModules = () => {
 	return (

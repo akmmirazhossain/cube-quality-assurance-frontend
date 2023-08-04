@@ -1,36 +1,22 @@
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from '../atoms/Button';
-import { Listbox } from '@headlessui/react';
-import { LanguageList } from '@/constants/constants';
-import LanguageItem from './LanguageItem';
+import LanguageSelect from './LanguageSelect';
 
 const MenuRightAction = () => {
-	const [selectedLanguage, setSelectedLanguage] = useState(LanguageList[0]);
 	return (
-		<div className="relative -mt-2 flex place-items-center gap-4 px-2 align-middle">
-			<Link href={'signin'} className="mr-2">
+		<div className="relative -mt-2 flex place-items-center gap-4 px-2 align-middle text-sm">
+			<Link href={'signin'} className="mr-2  font-normal">
 				Sign in
 			</Link>
 			<Button href={'demo'} size={'small'} className={`h-auto`}>
 				Get Demo
 			</Button>
-			<div className="relative -mt-6 text-center">
-				<span>Language</span>
-				<div className="absolute">
-					<Listbox value={LanguageList} onChange={setSelectedLanguage}>
-						<Listbox.Button className={`flex place-items-center gap-3 align-middle`}>
-							<LanguageItem item={selectedLanguage} showTitle={false} />
-						</Listbox.Button>
-						<Listbox.Options>
-							{LanguageList.map((item) => (
-								<Listbox.Option key={item.id} value={item}>
-									<LanguageItem item={item} showTitle={false} />
-								</Listbox.Option>
-							))}
-						</Listbox.Options>
-					</Listbox>
+			<div className="relative text-center">
+				<div className="text-sm font-normal">
+					<span>Language</span>
 				</div>
+				<LanguageSelect showTitle={false} />
 			</div>
 		</div>
 	);

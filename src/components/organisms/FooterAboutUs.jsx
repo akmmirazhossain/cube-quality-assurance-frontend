@@ -1,9 +1,8 @@
 import { FooterAboutUsNavLinklist } from '@/constants/constants';
-import Link from 'next/link';
 import React from 'react';
 import FooterItemLink from '../atoms/FooterItemLink';
 
-export const FooterAboutUs = () => {
+const FooterAboutUs = () => {
 	return (
 		<div className="text-white">
 			<h1 className="text-[24px] ">About Us</h1>
@@ -17,3 +16,5 @@ export const FooterAboutUs = () => {
 		</div>
 	);
 };
+
+export default FooterAboutUs;

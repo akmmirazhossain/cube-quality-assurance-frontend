@@ -1,12 +1,9 @@
 import { NavList } from '@/constants/constants';
-//import { FlyMenu } from "@/components/atoms/FlyMenu";
-import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { BiSolidDownArrow } from 'react-icons/bi';
 
 const MenuBar = () => {
-	const [mobileMenu, setMobileMenu] = useState(false);
 	const [activeSubmenu, setActiveSubmenu] = useState(null);
 	const [activeNestedSubmenu, setActiveNestedSubmenu] = useState(null);
 	const toggleSubmenu = (index) => {
@@ -17,11 +14,11 @@ const MenuBar = () => {
 	};
 
 	return (
-		<div className="-ml-[150px]">
+		<div className="relative md:-ml-[150px]">
 			<div className="relative z-50 mx-auto w-full">
-				<div className="relative flex w-full justify-between py-5">
-					<div className="flex gap-4 pb-3 sm:px-3">
-						{NavList.map((item, index) => (
+				<div className="relative flex w-full py-5">
+					<div className="flex flex-col gap-4 pb-3 sm:px-3 md:flex-row">
+						{NavList.map((item) => (
 							<div
 								key={item.id}
 								className="relative"
@@ -29,7 +26,7 @@ const MenuBar = () => {
 								onMouseEnter={() => toggleSubmenu(item.id)}
 								onMouseLeave={() => toggleSubmenu(item.id)}
 							>
-								<div className="flex place-items-center justify-center gap-2 py-2 text-sm">
+								<div className="flex place-items-center gap-2 py-2 text-sm font-normal md:justify-center">
 									<Link
 										className="block font-normal text-secondary hover:text-primary"
 										href={item.path}
@@ -44,8 +41,8 @@ const MenuBar = () => {
 								</div>
 
 								{item.submenu && activeSubmenu === item.id && (
-									<div className="absolute z-10 -ml-8 w-auto bg-transparent">
-										<div className="realtive divide-y divide-gray-100 rounded-md bg-offWhite px-4 py-2 shadow-lg">
+									<div className="absolute z-10 w-auto bg-dark bg-transparent md:-ml-8">
+										<div className="realtive divide-y divide-gray-100 rounded-md bg-offWhite px-2 py-2 shadow-lg md:px-4">
 											{item.submenu.map((subitem) => (
 												<div
 													key={subitem.id}
@@ -56,7 +53,7 @@ const MenuBar = () => {
 													<div className="flex place-items-center justify-center">
 														<Link
 															href={subitem.path}
-															className="block px-4 py-1 text-xs font-normal text-primary hover:text-secondary"
+															className="block px-4 py-1 font-normal text-primary hover:text-secondary"
 														>
 															{subitem.name}
 														</Link>

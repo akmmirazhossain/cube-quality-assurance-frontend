@@ -25,7 +25,7 @@ export const HEADER_HEIGHT = 300;
 export const NavList = [
 	{
 		id: 1,
-		path: '/',
+		path: '#',
 		name: 'App Modules',
 		submenu: [
 			{ id: 11, path: '/tutorials', name: 'Tutorials' },
@@ -50,7 +50,7 @@ export const NavList = [
 	{ id: 3, path: '/about-us', name: 'About Us' },
 	{
 		id: 4,
-		path: '/contact',
+		path: '#',
 		name: 'Contact',
 		submenu: [
 			{ id: 41, path: '/tutorials', name: 'Tutorials' },
