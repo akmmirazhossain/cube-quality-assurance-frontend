@@ -6,11 +6,11 @@ import Heading from '../atoms/Heading';
 
 const AppModuleHeaderItem = () => {
 	return (
-		<div className="mx-auto h-[405px] w-[953px] pl-5">
-			<div className=" grid h-full w-full grid-flow-row grid-cols-1 gap-5 md:grid-cols-2">
-				<div className="flex place-items-center justify-center">
+		<div className="mx-auto px-5 md:max-w-[953px]">
+			<div className="grid gap-5 md:grid-cols-2">
+				<div className="flex items-center justify-center md:justify-start">
 					<div className="h-[303px] w-[303px] rounded-full bg-secondary p-4">
-						<div className="flex h-full w-full place-items-center justify-center align-middle">
+						<div className="flex h-full w-full items-center justify-center">
 							<div className="grid h-full w-full place-items-center">
 								<div className="mx-auto">
 									<Image
@@ -28,16 +28,16 @@ const AppModuleHeaderItem = () => {
 					</div>
 				</div>
 
-				<div className="h-full w-full">
+				<div className="flex flex-col justify-center">
 					<Heading variant={'secondary'}>Apps Module</Heading>
 					<div className="py-4">
-						<p className=" text-2xl font-light leading-[38px] text-secondary">
+						<p className="text-xl font-light leading-[28px] text-secondary">
 							Our team of experienced professionals is dedicated to helping businesses achieve their
 							goals by providing them with the tools and expertise they need to succeed. This is why
 							we have developed these app modules to make your life easier.
 						</p>
 					</div>
-					<Button>Learn More</Button>
+					<Button className="mt-4">Learn More</Button>
 				</div>
 			</div>
 		</div>

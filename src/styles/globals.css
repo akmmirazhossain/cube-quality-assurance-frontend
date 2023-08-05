@@ -9,14 +9,16 @@ html {
 	font-family: 'Poppins', sans-serif;
 }
 
-.module-skew {
-	width: 70%;
-	transform: skew(20deg);
-	border-radius: 0 0 45px 20px;
-	margin: 0 auto;
-}
+@layer utilities {
+	.module-skew {
+		width: 70%;
+		transform: skew(20deg);
+		border-radius: 0 0 45px 20px;
+		margin: 0 auto;
+	}
 
-.module-skew-inner {
-	transform: skew(-20deg);
-	display: inline-block;
+	.module-skew-inner {
+		transform: skew(-20deg);
+		display: inline-block;
+	}
 }
