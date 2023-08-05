@@ -81,7 +81,7 @@ const LanguageSelect = ({ footer = false, header = false }) => {
 						>
 							<span className="flex items-center">
 								<Image src={language.icon} alt={language.title} className="mr-2 h-6 w-6" />
-								{footer || (header && language.title)}
+								{(footer || header) && language.title}
 							</span>
 						</li>
 					))}
