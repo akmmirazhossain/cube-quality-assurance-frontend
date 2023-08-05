@@ -1,6 +1,5 @@
 import React from 'react';
 import Heading from '../atoms/Heading';
-import { AppModuleListItem } from '../organisms';
 import AppFeatureList from '../molecules/AppFeatureList';
 
 const BuildAwesomeCampaingns = () => {
