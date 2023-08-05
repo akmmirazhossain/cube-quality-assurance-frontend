@@ -10,15 +10,18 @@ import {
 	SupervisorIcon,
 	English,
 	Arabic,
-	Facebook,
-	Twitter,
-	LinkedIn,
-	GitHub,
-	Instagram,
-	Email,
-	Phone,
-	WhatsApp,
 } from '../../public/images';
+
+import { ImFacebook } from 'react-icons/im';
+import {
+	BsFillEnvelopeAtFill,
+	BsGithub,
+	BsInstagram,
+	BsLinkedin,
+	BsTelephoneOutboundFill,
+	BsTwitter,
+	BsWhatsapp,
+} from 'react-icons/bs';
 
 export const HEADER_HEIGHT = 300;
 
@@ -181,48 +184,48 @@ export const FooterSocialList = [
 		id: 1,
 		title: 'Facebook',
 		href: '#',
-		logo: Facebook,
+		icon: <ImFacebook />,
 	},
 	{
 		id: 2,
 		title: 'Twitter',
 		href: '#',
-		logo: Twitter,
+		icon: <BsTwitter />,
 	},
 	{
 		id: 3,
 		title: 'LinkedIn',
 		href: '#',
-		logo: LinkedIn,
+		icon: <BsLinkedin />,
 	},
 	{
 		id: 4,
 		title: 'GitHub',
 		href: '#',
-		logo: GitHub,
+		icon: <BsGithub />,
 	},
 	{
 		id: 5,
 		title: 'Instagram',
 		href: '#',
-		logo: Instagram,
+		icon: <BsInstagram />,
 	},
 	{
 		id: 6,
 		title: 'Email',
 		href: '#',
-		logo: Email,
+		icon: <BsFillEnvelopeAtFill />,
 	},
 	{
 		id: 7,
 		title: 'Phone',
 		href: '#',
-		logo: Phone,
+		icon: <BsTelephoneOutboundFill />,
 	},
 	{
 		id: 8,
 		title: 'WhatsApp',
 		href: '#',
-		logo: WhatsApp,
+		icon: <BsWhatsapp />,
 	},
 ];

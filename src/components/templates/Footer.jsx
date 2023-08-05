@@ -32,9 +32,9 @@ const Footer = () => {
 								<div className="relative flex place-items-center justify-center">
 									{/* For small screens, show the items in a column */}
 									<div className="grid grid-cols-4 gap-4 md:grid-cols-8">
-										{FooterSocialList.map(({ id, title, logo, href }) => (
-											<Link href={href} key={id}>
-												<Image src={logo} alt={title} />
+										{FooterSocialList.map(({ id, title, logo, href, icon }) => (
+											<Link href={href} key={id} className="text-4xl text-white">
+												{icon}
 											</Link>
 										))}
 									</div>
