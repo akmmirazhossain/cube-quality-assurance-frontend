@@ -2,12 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	/* Root default css should be there */
-}
-
-body {
+html {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+@layer utilities {
+	.module-skew {
+		width: 70%;
+		transform: skew(20deg);
+		border-radius: 0 0 45px 20px;
+		margin: 0 auto;
+	}
+
+	.module-skew-inner {
+		transform: skew(-20deg);
+		display: inline-block;
+	}
+}
+
+.container {
+	position: relative;
+	max-width: 1440px;
+	margin: 0 auto;
 }
