@@ -25,13 +25,14 @@ const Footer = () => {
 							<div className="relative">
 								<p className="font-light text-white">
 									QUisan opensource AI business apps that is designed to cover all your company
-									needs: project management, etc. QA's unique value proposition is to be at the same
-									time very easy to use and fully integrated.
+									needs: project management, etc. QA&apos;s unique value proposition is to be at the
+									same time very easy to use and fully integrated.
 								</p>
 								<hr className="my-8 h-px border-0 bg-gray-100"></hr>
 								<div className="relative flex place-items-center justify-center">
 									{/* For small screens, show the items in a column */}
 									<div className="grid grid-cols-4 gap-4 md:grid-cols-8">
+										{/* eslint-disable-next-line no-unused-vars */}
 										{FooterSocialList.map(({ id, title, logo, href, icon }) => (
 											<Link href={href} key={id} className="text-4xl text-white">
 												{icon}

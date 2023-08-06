@@ -1,4 +1,3 @@
-import React from 'react';
 import { Person } from '../../../public/images';
 import Image from 'next/image';
 import Heading from '../atoms/Heading';
@@ -17,7 +16,7 @@ const WhoWeAre = () => {
 						always been to provide a range of easy-to-use business applications based on AI that
 						form a complete suite of tools to accompany any business need. We provide companies easy
 						access to the software they need to run and expand their business. So join us and step
-						into tomorrow's world, today.
+						into tomorrow&apos;s world, today.
 					</p>
 				</div>
 				<div className="relative col-span-1 mx-auto h-[250px] w-[250px] md:h-[450px] md:w-[450px] md:place-items-center">

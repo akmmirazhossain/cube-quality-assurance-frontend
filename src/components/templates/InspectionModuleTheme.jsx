@@ -1,8 +1,7 @@
-import Image from 'next/image';
 import React from 'react';
 import { MacbookPro } from '../../../public/images';
-import { BsFillPlayCircleFill } from 'react-icons/bs';
 import ThemeEnterpriseVideo from '../molecules/ThemeEnterpriseVideo';
+
 const InspectionModuleTheme = () => {
 	return (
 		<>

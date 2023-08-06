@@ -1,4 +1,3 @@
-import React from 'react';
 import Heading from '../atoms/Heading';
 
 const PlanHeader = () => {
@@ -8,7 +7,7 @@ const PlanHeader = () => {
 				<div className="mx-auto w-full md:w-full">
 					<div className="text-center text-secondary">
 						<Heading variant={'secondary'} weight={'light'}>
-							Choose a Plan That's
+							Choose a Plan That&apos;s
 						</Heading>
 						<Heading variant={'secondary'}>Right for your Business</Heading>
 						<p className="my-4 text-sm">*Monthly Subscription Per 3 or 6 Months</p>
