@@ -16,37 +16,35 @@ const AppBar = () => {
 	const router = useRouter();
 	return (
 		<>
-			<div className="bg-solitude">
-				<div className="container">
-					{/* Desktp Navigation */}
-					<div className=" mx-auto hidden w-[90%] md:block">
-						<div className="grid grid-cols-2">
-							{router.pathname === '/' ? <LogoPrimary /> : <LogoSecondary />}
+			<div className="container bg-solitude">
+				{/* Desktp Navigation */}
+				<div className=" mx-auto hidden w-[90%] md:block">
+					<div className="grid grid-cols-2">
+						{router.pathname === '/' ? <LogoPrimary /> : <LogoSecondary />}
 
-							{/* Desktop Navigation */}
-							<div className="relative hidden h-auto align-middle md:block">
-								<div className="flex place-items-center justify-between">
-									<MenuBar />
-									<MenuRightAction />
-								</div>
+						{/* Desktop Navigation */}
+						<div className="relative hidden h-auto align-middle md:block">
+							<div className="flex place-items-center justify-between">
+								<MenuBar />
+								<MenuRightAction />
 							</div>
 						</div>
 					</div>
+				</div>
 
-					{/* Mobile Navigation */}
-					<div className="relative z-10 flex w-full place-items-center items-center justify-between p-5 md:hidden">
-						<div className=" max-w-sm">
-							<Link href={'/'} className="h-auto w-full">
-								<Image src={LogoSecondaryIcon} className="w-full" alt={'QA Logo'} />
-							</Link>
-						</div>
-						<Button
-							className={'bg-transparent text-2xl text-primary duration-500 ease-in'}
-							onClick={() => setMobileMenu(!mobileMenu)}
-						>
-							<RxHamburgerMenu />
-						</Button>
+				{/* Mobile Navigation */}
+				<div className="relative z-10 flex w-full place-items-center items-center justify-between p-5 md:hidden">
+					<div className=" max-w-sm">
+						<Link href={'/'} className="h-auto w-full">
+							<Image src={LogoSecondaryIcon} className="w-full" alt={'QA Logo'} />
+						</Link>
 					</div>
+					<Button
+						className={'bg-transparent text-2xl text-primary duration-500 ease-in'}
+						onClick={() => setMobileMenu(!mobileMenu)}
+					>
+						<RxHamburgerMenu />
+					</Button>
 				</div>
 			</div>
 

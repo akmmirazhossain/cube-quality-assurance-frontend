@@ -5,7 +5,7 @@ import Heading from '../atoms/Heading';
 
 const WhoWeAre = () => {
 	return (
-		<div className="relative mx-auto my-8 w-full md:my-16 md:w-[80%]">
+		<div className="relative mx-auto w-full py-10 md:my-16 md:mt-32 md:w-[80%] md:py-0">
 			<div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
 				<div className="md:col-span-2">
 					<Heading variant={'secondary'}>Who we are...</Heading>

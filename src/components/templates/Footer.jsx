@@ -8,7 +8,7 @@ import FooterAboutUs from '../organisms/FooterAboutUs';
 
 const Footer = () => {
 	return (
-		<div className="relative h-auto w-full bg-dark">
+		<div className="container relative h-auto w-full bg-dark">
 			<div className="mx-auto max-w-[1050px] p-5 md:pt-20">
 				<div className="grid grid-flow-row grid-cols-1 gap-4 md:grid-cols-2">
 					<div className="col-span-1 text-white">

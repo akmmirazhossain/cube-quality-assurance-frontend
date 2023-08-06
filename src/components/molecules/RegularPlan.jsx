@@ -5,11 +5,11 @@ import Heading from '../atoms/Heading';
 
 const RegularPlan = () => {
 	return (
-		<div className="h-full">
-			<div className="relative p-5">
+		<div className="md:regular-skew h-full bg-secondary text-white">
+			<div className="md:module-skew-inner relative">
 				<div className="mx-auto w-2/3">
 					<div className="relative w-full p-2 text-center">
-						<Heading variant={'secondary'} size={'md'} weight={'medium'}>
+						<Heading variant={'white'} size={'md'} weight={'medium'}>
 							Regular
 						</Heading>
 						<span className="text-base font-light">for small business</span>
@@ -25,7 +25,7 @@ const RegularPlan = () => {
 						</ul>
 					</div>
 					<div className="my-8 text-center">
-						<Button variant={'secondary'} size={'small'}>
+						<Button variant={'primary'} size={'small'}>
 							Get Started
 						</Button>
 					</div>
