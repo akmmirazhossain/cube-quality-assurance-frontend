@@ -6,11 +6,11 @@ import RequestForm from '@/components/organisms/RequestForm';
 
 const enterprise = () => {
 	return (
-		<>
+		<div className="container relative">
 			<EnterpriseHero />
 			<BuildAwesomeCampaingns />
 			<RequestForm />
-		</>
+		</div>
 	);
 };
 

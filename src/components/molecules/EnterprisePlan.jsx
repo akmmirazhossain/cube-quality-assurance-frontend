@@ -5,11 +5,11 @@ import Heading from '../atoms/Heading';
 
 const EnterprisePlan = () => {
 	return (
-		<div className="h-full overflow-hidden">
+		<div className="h-full">
 			<div className="md:module-skew bg-primary">
-				<div className="relative p-5">
-					<div className="md:module-skew-inner text-white">
-						<div className="relative w-full p-2 text-center">
+				<div className="relative">
+					<div className="md:module-skew-inner relative p-5 px-10 text-white md:-left-32 md:px-0">
+						<div className="relative w-full text-center">
 							<Heading variant={'white'} size={'md'} weight={'medium'}>
 								Enterprise
 							</Heading>
