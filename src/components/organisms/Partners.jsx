@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
 import { PartnersList } from '@/constants/constants';
-import { Adobe, Oasis } from '../../../public/images';
 
 const PartnersSection = () => {
 	return (
