@@ -10,6 +10,11 @@ import {
 	SupervisorIcon,
 	English,
 	Arabic,
+	Partners,
+	Apple,
+	Adobe,
+	Mango,
+	Oasis,
 } from '../../public/images';
 
 import { ImFacebook } from 'react-icons/im';
@@ -227,5 +232,53 @@ export const FooterSocialList = [
 		title: 'WhatsApp',
 		href: '#',
 		icon: <BsWhatsapp />,
+	},
+];
+export const PartnersList = [
+	{
+		id: 1,
+		title: 'Partner',
+		icon: Partners,
+	},
+	{
+		id: 2,
+		title: 'Apple',
+		icon: Apple,
+	},
+	{
+		id: 3,
+		title: 'Adobe',
+		icon: Adobe,
+	},
+	{
+		id: 4,
+		title: 'Mango',
+		icon: Mango,
+	},
+	{
+		id: 5,
+		title: 'Oasis',
+		icon: Oasis,
+	},
+];
+
+export const WhatEveryonesSayingList = [
+	{
+		id: 1,
+		quote:
+			'The team prioritised our company’s needs and provided us with exactly the right product enhancemenmts that we needed.',
+		identity: 'Jay Chase, Founder @The Freelancing Institution',
+	},
+	{
+		id: 2,
+		quote:
+			'The team prioritised our company’s needs and provided us with exactly the right product enhancemenmts that we needed.',
+		identity: 'Jay Chase, Founder @The Freelancing Institution',
+	},
+	{
+		id: 3,
+		quote:
+			'The team prioritised our company’s needs and provided us with exactly the right product enhancemenmts that we needed.',
+		identity: 'Jay Chase, Founder @The Freelancing Institution',
 	},
 ];

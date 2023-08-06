@@ -23,6 +23,11 @@ import HalfRound from './shapes/HalfRound.png';
 //inspection manager moduel page images
 import MacbookPro from './macbook-pro.png';
 import MacbookProEnterprise from './macbook-pro-enterprise.png';
+import Adobe from './icon/Adobe.png';
+import Apple from './icon/Apple.png';
+import Mango from './icon/Mango.png';
+import Oasis from './icon/Oasis.png';
+import Partners from './icon/Partners.png';
 
 export {
 	Logo,
@@ -45,4 +50,9 @@ export {
 	HalfRound,
 	MacbookPro,
 	MacbookProEnterprise,
+	Adobe,
+	Apple,
+	Mango,
+	Oasis,
+	Partners,
 };
