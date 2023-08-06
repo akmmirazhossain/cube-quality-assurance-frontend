@@ -3,7 +3,7 @@ import { AiFillMessage } from 'react-icons/ai';
 const InspectionModuleHero = () => {
 	return (
 		<div className="relative w-full bg-[url('/images/shapes/HalfRound.png')] bg-auto bg-left-bottom bg-no-repeat md:h-screen">
-			<div className="relative h-full p-10 sm:p-16 md:p-24">
+			<div className="relative h-full p-10 sm:p-16 md:p-20">
 				<div className=" h-full w-full bg-auto bg-right bg-no-repeat md:bg-inspectionModule">
 					<div className="w-full p-2 md:max-w-[490px]">
 						<div className="text-secondary md:py-8">
@@ -21,12 +21,6 @@ const InspectionModuleHero = () => {
 							</span>
 						</div>
 					</div>
-				</div>
-			</div>
-
-			<div className="absolute bottom-2 right-4 h-[49px] w-[49px] rounded-full bg-eminence">
-				<div className="flex place-items-center justify-center p-2">
-					<AiFillMessage className="h-full w-full text-white" />
 				</div>
 			</div>
 		</div>

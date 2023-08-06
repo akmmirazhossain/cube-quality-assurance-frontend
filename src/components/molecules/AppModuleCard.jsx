@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
+import { Button } from '../atoms/Button';
 
-const AppModuleCard = ({ item }) => {
+const AppModuleCard = ({ item, button = false }) => {
 	let { icon, title, content } = item;
 	return (
 		<div className="relative space-y-2 text-center">
@@ -10,8 +11,11 @@ const AppModuleCard = ({ item }) => {
 			</div>
 
 			<h3 className="font-semibold text-secondary">{title}</h3>
-
-			<p className="text-sm font-light leading-[21px] text-secondary">{content}</p>
+			{button ? (
+				<Button size={'small'}>Learn More</Button>
+			) : (
+				<p className="text-sm font-light leading-[21px] text-secondary">{content}</p>
+			)}
 		</div>
 	);
 };

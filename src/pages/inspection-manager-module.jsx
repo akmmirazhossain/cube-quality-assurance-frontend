@@ -5,12 +5,12 @@ import InspectionModuleTheme from '@/components/templates/InspectionModuleTheme'
 
 const InspectionManagerModule = () => {
 	return (
-		<>
+		<div className="container">
 			<InspectionModuleHero />
 			<InspectionModuleTheme />
 			<OptimizedMobileFriendly />
 			<FullyIntegratedQaApps />
-		</>
+		</div>
 	);
 };
 
