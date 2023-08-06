@@ -1,5 +1,3 @@
-import React from 'react';
-import { AiFillMessage } from 'react-icons/ai';
 const InspectionModuleHero = () => {
 	return (
 		<div className="relative w-full bg-[url('/images/shapes/HalfRound.png')] bg-auto bg-left-bottom bg-no-repeat md:h-screen">
