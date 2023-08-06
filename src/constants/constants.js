@@ -10,22 +10,30 @@ import {
 	SupervisorIcon,
 	English,
 	Arabic,
-	Facebook,
-	Twitter,
-	LinkedIn,
-	GitHub,
-	Instagram,
-	Email,
-	Phone,
-	WhatsApp,
+	Partners,
+	Apple,
+	Adobe,
+	Mango,
+	Oasis,
 } from '../../public/images';
+
+import { ImFacebook } from 'react-icons/im';
+import {
+	BsFillEnvelopeAtFill,
+	BsGithub,
+	BsInstagram,
+	BsLinkedin,
+	BsTelephoneOutboundFill,
+	BsTwitter,
+	BsWhatsapp,
+} from 'react-icons/bs';
 
 export const HEADER_HEIGHT = 300;
 
 export const NavList = [
 	{
 		id: 1,
-		path: '/',
+		path: '#',
 		name: 'App Modules',
 		submenu: [
 			{ id: 11, path: '/tutorials', name: 'Tutorials' },
@@ -50,7 +58,7 @@ export const NavList = [
 	{ id: 3, path: '/about-us', name: 'About Us' },
 	{
 		id: 4,
-		path: '/contact',
+		path: '#',
 		name: 'Contact',
 		submenu: [
 			{ id: 41, path: '/tutorials', name: 'Tutorials' },
@@ -181,48 +189,96 @@ export const FooterSocialList = [
 		id: 1,
 		title: 'Facebook',
 		href: '#',
-		logo: Facebook,
+		icon: <ImFacebook />,
 	},
 	{
 		id: 2,
 		title: 'Twitter',
 		href: '#',
-		logo: Twitter,
+		icon: <BsTwitter />,
 	},
 	{
 		id: 3,
 		title: 'LinkedIn',
 		href: '#',
-		logo: LinkedIn,
+		icon: <BsLinkedin />,
 	},
 	{
 		id: 4,
 		title: 'GitHub',
 		href: '#',
-		logo: GitHub,
+		icon: <BsGithub />,
 	},
 	{
 		id: 5,
 		title: 'Instagram',
 		href: '#',
-		logo: Instagram,
+		icon: <BsInstagram />,
 	},
 	{
 		id: 6,
 		title: 'Email',
 		href: '#',
-		logo: Email,
+		icon: <BsFillEnvelopeAtFill />,
 	},
 	{
 		id: 7,
 		title: 'Phone',
 		href: '#',
-		logo: Phone,
+		icon: <BsTelephoneOutboundFill />,
 	},
 	{
 		id: 8,
 		title: 'WhatsApp',
 		href: '#',
-		logo: WhatsApp,
+		icon: <BsWhatsapp />,
+	},
+];
+export const PartnersList = [
+	{
+		id: 1,
+		title: 'Partner',
+		icon: Partners,
+	},
+	{
+		id: 2,
+		title: 'Apple',
+		icon: Apple,
+	},
+	{
+		id: 3,
+		title: 'Adobe',
+		icon: Adobe,
+	},
+	{
+		id: 4,
+		title: 'Mango',
+		icon: Mango,
+	},
+	{
+		id: 5,
+		title: 'Oasis',
+		icon: Oasis,
+	},
+];
+
+export const WhatEveryonesSayingList = [
+	{
+		id: 1,
+		quote:
+			'The team prioritised our company’s needs and provided us with exactly the right product enhancemenmts that we needed.',
+		identity: 'Jay Chase, Founder <br/>@The Freelancing Institution',
+	},
+	{
+		id: 2,
+		quote:
+			'The team prioritised our company’s needs and provided us with exactly the right product enhancemenmts that we needed.',
+		identity: 'Jay Chase, Founder <br/> @The Freelancing Institution',
+	},
+	{
+		id: 3,
+		quote:
+			'The team prioritised our company’s needs and provided us with exactly the right product enhancemenmts that we needed.',
+		identity: 'Jay Chase, Founder <br/> @The Freelancing Institution',
 	},
 ];

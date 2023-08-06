@@ -17,22 +17,17 @@ import LowerSectionVArt from './icon/LowerSectionVArt.png';
 import English from './language/English.png';
 import Arabic from './language/Arabic.png';
 
-// Social Icon
-import Facebook from './social/Facebook.png';
-import Twitter from './social/Twitter.png';
-import LinkedIn from './social/LinkedIn.png';
-import GitHub from './social/GitHub.png';
-import Instagram from './social/Instagram.png';
-import Email from './social/Email.png';
-import Phone from './social/Phone.png';
-import WhatsApp from './social/WhatsApp.png';
-
 //Shapes
 import HalfRound from './shapes/HalfRound.png';
 
 //inspection manager moduel page images
 import MacbookPro from './macbook-pro.png';
 import MacbookProEnterprise from './macbook-pro-enterprise.png';
+import Adobe from './icon/Adobe.png';
+import Apple from './icon/Apple.png';
+import Mango from './icon/Mango.png';
+import Oasis from './icon/Oasis.png';
+import Partners from './icon/Partners.png';
 
 export {
 	Logo,
@@ -52,15 +47,12 @@ export {
 	LowerSectionVArt,
 	English,
 	Arabic,
-	Facebook,
-	Twitter,
-	LinkedIn,
-	GitHub,
-	Instagram,
-	Email,
-	Phone,
-	WhatsApp,
 	HalfRound,
 	MacbookPro,
 	MacbookProEnterprise,
+	Adobe,
+	Apple,
+	Mango,
+	Oasis,
+	Partners,
 };
