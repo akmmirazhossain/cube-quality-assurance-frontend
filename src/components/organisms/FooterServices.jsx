@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
-import { LanguageList } from '@/constants/constants';
+import React from 'react';
 import FooterItemLink from '../atoms/FooterItemLink';
 import LanguageSelect from '../molecules/LanguageSelect';
 const FooterServices = () => {
-	const [selectedLanguage, setSelectedLanguage] = useState(LanguageList[0]);
-
 	return (
 		<div className="relative">
 			<h1 className="text-[24px] ">Services</h1>
