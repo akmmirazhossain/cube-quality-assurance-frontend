@@ -1,138 +1,116 @@
-//import React from 'react';
+import React from 'react';
 //import Group from "../../public"
 
 const RequestForm = () => {
 	return (
 		<div
 			className="relative mx-auto h-[1000px]  border bg-solitude bg-[url('/images/Group.png')] bg-contain bg-center bg-no-repeat object-contain"
-			// style={{ backgroundImage: `url('images/Group.png')` }}
+			style={{ backgroundImage: `url('images/Group.png')` }}
 		>
-			<div class="grid grid-cols-6 gap-4">
-				<div class="col-span-4 col-start-2">
-					<h1 className=" mx-auto pb-5 text-center text-xl">
+			<div className="flex flex-row justify-center">
+				<div className="basis-1/2 ">
+					<div className="-px-3 w-full pb-5 text-center text-[#077D83]">
 						Simply complete the beLow formand one of our experts will get back to you
-					</h1>
+					</div>
 
-					<form className="mx-auto w-full">
-						<div className="mb-6 flex flex-wrap">
-							<div className="w-full px-3 md:w-1/2">
-								<label
-									className="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-700"
-									htmlFor="grid-first-name"
-								>
-									First Name
+					<div className="container mx-auto p-4">
+						<form className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+							{/* Row 1 */}
+							<div>
+								<label htmlFor="field1" className="block text-sm font-medium text-[#077D83]">
+									First Name*
 								</label>
 								<input
-									className="block w-full appearance-none rounded border border-gray-200 bg-gray-200 px-4 py-3 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
-									id="grid-last-name"
 									type="text"
-									placeholder=""
+									id="field1"
+									name="field1"
+									className="mt-1 block w-full border-gray-300 p-1 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
 								/>
 							</div>
-							<div className="w-full px-3 md:w-1/2">
-								<label
-									className="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-700"
-									htmlFor="grid-last-name"
-								>
-									Last Name
+							<div>
+								<label htmlFor="field2" className="block text-sm font-medium text-[#077D83]">
+									Last Name*
 								</label>
 								<input
-									className="block w-full appearance-none rounded border border-gray-200 bg-gray-200 px-4 py-3 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
-									id="grid-last-name"
 									type="text"
-									placeholder=""
+									id="field2"
+									name="field2"
+									className="mt-1 block w-full border-gray-300 p-1 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
 								/>
 							</div>
-						</div>
-						<div className="mb-6 flex flex-wrap">
-							<div className="w-full px-3 md:w-1/2">
-								<label
-									className="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-700"
-									htmlFor="grid-first-name"
-								>
-									Email
+							{/* Row 2 */}
+							<div>
+								<label htmlFor="field3" className="block text-sm font-medium text-[#077D83]">
+									Email Address*
 								</label>
 								<input
-									className="block w-full appearance-none rounded border border-gray-200 bg-gray-200 px-4 py-3 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
-									id="grid-last-name"
 									type="text"
-									placeholder=""
+									id="field3"
+									name="field3"
+									className="mt-1 block w-full border-gray-300 p-1 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
 								/>
 							</div>
-							<div className="w-full px-3 md:w-1/2">
-								<label
-									className="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-700"
-									htmlFor="grid-last-name"
-								>
-									Business
+							<div>
+								<label htmlFor="field4" className="block text-sm font-medium text-[#077D83]">
+									Business Name*
 								</label>
 								<input
-									className="block w-full appearance-none rounded border border-gray-200 bg-gray-200 px-4 py-3 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
-									id="grid-last-name"
 									type="text"
-									placeholder=""
+									id="field4"
+									name="field4"
+									className="mt-1 block w-full border-gray-300 p-1 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
 								/>
 							</div>
-						</div>
-						<div className="mb-6 flex flex-wrap">
-							<div className="w-full px-3 md:w-1/2">
-								<label
-									className="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-700"
-									htmlFor="grid-first-name"
-								>
-									Contact
+							{/* Row 3 */}
+							<div>
+								<label htmlFor="field5" className="block text-sm font-medium text-[#077D83]">
+									Contact Number*
 								</label>
 								<input
-									className="block w-full appearance-none rounded border border-gray-200 bg-gray-200 px-4 py-3 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
-									id="grid-last-name"
 									type="text"
-									placeholder=""
+									id="field5"
+									name="field5"
+									className="mt-1 block w-full border-gray-300 p-1 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
 								/>
 							</div>
-							<div className="w-full px-3 md:w-1/2">
-								<label
-									className="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-700"
-									htmlFor="grid-last-name"
-								>
-									Nature of industry
+							<div>
+								<label htmlFor="field6" className="block text-sm font-medium text-[#077D83]">
+									Nature of Industry
 								</label>
-								<div className="relative">
-									<select
-										className="block w-full appearance-none rounded border border-gray-200 bg-gray-200 px-4 py-3 pr-8 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
-										id="grid-state"
-									>
-										<option>...</option>
-										<option>...</option>
-										<option>...</option>
-									</select>
-									<div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-										<svg
-											className="h-4 w-4 fill-current"
-											xmlns="http://www.w3.org/2000/svg"
-											viewBox="0 0 20 20"
-										>
-											<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-										</svg>
-									</div>
-								</div>
-							</div>
-						</div>
-						#85ztnq75t
-						<div className="mb-2 flex flex-wrap">
-							<div className="mb-6 w-full px-3 md:mb-0">
-								<label
-									className="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-700"
-									htmlFor="grid-city"
+								<select
+									id="field6"
+									name="field6"
+									className="mt-1 block w-full border-gray-300 p-1 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
 								>
-									City
+									<option value="option1">---</option>
+									<option value="option2">Option 1</option>
+									<option value="option3">Option 2</option>
+								</select>
+							</div>
+							{/* Textarea */}
+							<div className="col-span-2">
+								<label htmlFor="textarea" className="block text-sm font-medium  text-[#077D83]">
+									Description of your request*
 								</label>
 								<textarea
-									class="block w-full appearance-none rounded border border-gray-200 bg-gray-200 px-4 py-3 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
-									id="grid-last-name"
-								></textarea>
+									id="textarea"
+									name="textarea"
+									rows={4}
+									className="mt-1 block w-full border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+									defaultValue={''}
+								/>
 							</div>
-						</div>
-					</form>
+							{/* Submit Button */}
+							<div className="col-span-2 mx-auto">
+								<button
+									type="submit"
+									className="mt-4 w-80 rounded-md  bg-[#23252D]  p-2 text-white shadow-sm hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+								>
+									Submit
+								</button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
