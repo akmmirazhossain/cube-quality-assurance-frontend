@@ -25,11 +25,12 @@ const headerDesign = cva('leading-normal', {
 	},
 });
 
-const Heading = ({ variant, weight, size, className, children, ...props }) => {
+const Heading = ({ tag, variant, weight, size, className, children, ...props }) => {
+	const Tag = tag === 'p' ? 'p' : 'h1';
 	return (
-		<h1 className={headerDesign({ variant, weight, size, className })} {...props}>
+		<Tag className={headerDesign({ variant, weight, size, className })} {...props}>
 			{children}
-		</h1>
+		</Tag>
 	);
 };
 

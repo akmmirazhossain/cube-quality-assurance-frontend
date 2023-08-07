@@ -29,6 +29,9 @@ import Mango from './icon/Mango.png';
 import Oasis from './icon/Oasis.png';
 import Partners from './icon/Partners.png';
 
+//community page
+import PersonGroup from './group/PersonGroup.png';
+
 export {
 	Logo,
 	LogoBack,
@@ -55,4 +58,5 @@ export {
 	Mango,
 	Oasis,
 	Partners,
+	PersonGroup,
 };
