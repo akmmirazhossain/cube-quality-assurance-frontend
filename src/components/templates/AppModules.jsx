@@ -3,7 +3,6 @@ import AppModulePlans from '../organisms/AppModulePlans';
 import WhoWeAre from '../organisms/WhoWeAre';
 import AppModuleHeaderItem from '../organisms/AppModuleHeaderItem';
 import AppModuleListItem from '../organisms/AppModuleListItem';
-import Image from 'next/image';
 
 const AppModules = () => {
 	return (
