@@ -20,33 +20,32 @@ const CommunityFaq = () => {
 				<Heading tag={'p'} variant={'secondary'} weight={'light'}>
 					then you&apos;re in the right place
 				</Heading>
+			</div>
+			<div className="relative flex h-full w-full flex-col px-10 py-5 md:left-[25%] md:w-[60%] md:px-0">
+				{Faqs.map(({ title, id, content }, index) => (
+					<div className="my-1 flex flex-row gap-5" key={id}>
+						{activeIndex === index ? (
+							<BiSolidMinusCircle className="mt-3 text-2xl text-red-500 transition-all duration-200 ease-in-out" />
+						) : (
+							<BiSolidPlusCircle className="mt-3 text-2xl text-primary transition-all duration-200 ease-in-out" />
+						)}
 
-				<div className="my-5 flex h-full w-full flex-col">
-					{Faqs.map(({ title, id, content }, index) => (
-						<div className="my-1 flex flex-row gap-5" key={id}>
-							{activeIndex === index ? (
-								<BiSolidMinusCircle className="mt-3 text-2xl text-red-500 transition-all duration-200 ease-in-out" />
-							) : (
-								<BiSolidPlusCircle className="mt-3 text-2xl text-primary transition-all duration-200 ease-in-out" />
-							)}
-
-							<div
-								className={`w-full ${
-									activeIndex === index ? 'accordion-border-full' : 'accordion-border-bottom'
-								}  px-3 py-2 `}
-							>
-								<button className="text-xl" onClick={() => toggleAccordion(index)}>
-									{title}
-								</button>
-								<Collapse isOpened={activeIndex === index}>
-									<div className="pt-2">
-										<p>{content}</p>
-									</div>
-								</Collapse>
-							</div>
+						<div
+							className={`w-full ${
+								activeIndex === index ? 'accordion-border-full' : 'accordion-border-bottom'
+							}  px-3 py-2 `}
+						>
+							<button className="text-xl" onClick={() => toggleAccordion(index)}>
+								{title}
+							</button>
+							<Collapse isOpened={activeIndex === index}>
+								<div className="pt-2">
+									<p>{content}</p>
+								</div>
+							</Collapse>
 						</div>
-					))}
-				</div>
+					</div>
+				))}
 			</div>
 		</div>
 	);
