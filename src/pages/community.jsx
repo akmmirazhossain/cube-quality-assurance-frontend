@@ -1,3 +1,4 @@
+import CommunityFaq from '@/components/templates/CommunityFaq';
 import CommunityHero from '@/components/templates/CommunityHero';
 import CommunityLookingForService from '@/components/templates/CommunityLookingForService';
 import CommunityQaDocumentation from '@/components/templates/CommunityQaDocumentation';
@@ -11,6 +12,7 @@ const community = () => {
 			<CommunityQaDocumentation />
 			<SupportForm />
 			<CommunityLookingForService />
+			<CommunityFaq />
 		</div>
 	);
 };

@@ -297,3 +297,36 @@ export const ServicePartner = [
 			"With more than 100 projects successfully completed, we are the UK's  largest gold partner with our latest office opening in Belfast, Ireland in August 2021. We transform businesses with innovative ERP solutions delivered by our UK based, in-house consultants and developers, helping businesses operate efficiently and achieve competitive advantage.",
 	},
 ];
+
+export const Faqs = [
+	{
+		id: 1,
+		title: 'Do I really have access to all your apps? ',
+		content: 'Yes, absolutely',
+	},
+	{
+		id: 2,
+		title: 'What is included in my subscription?',
+		content: 'Yes, absolutely',
+	},
+	{
+		id: 3,
+		title: 'Can I upgrade my subscription later on?',
+		content: 'Yes, absolutely',
+	},
+	{
+		id: 4,
+		title: 'Can I switch my plan back to the individual?',
+		content: 'Yes, absolutely',
+	},
+	{
+		id: 5,
+		title: 'How do you define a paying user?',
+		content: 'Yes, absolutely',
+	},
+	{
+		id: 6,
+		title: 'What does external API mean?',
+		content: 'Yes, absolutely',
+	},
+];
