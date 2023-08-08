@@ -4,11 +4,11 @@ import Heading from '../atoms/Heading';
 
 const SupportForm = () => {
 	return (
-		<div className="bg-solitude">
-			<div className="grid grid-flow-row grid-cols-3 pt-52">
-				<div className="col-span-2 mx-auto w-full px-24 py-10">
+		<div className="bg-solitude px-10 md:-mt-32">
+			<div className="grid grid-flow-row grid-cols-1 md:grid-cols-3 md:pt-[33%]">
+				<div className="mx-auto w-full py-5 md:col-span-2 md:px-24 md:py-10">
 					<div className="grid w-full grid-flow-row grid-cols-1 gap-5">
-						<div className="w-[70%]">
+						<div className="w-full md:w-[70%]">
 							<label htmlFor="field1" className="block text-sm font-medium text-secondary">
 								Name
 							</label>
@@ -19,7 +19,7 @@ const SupportForm = () => {
 								className="mt-1 block w-full border-gray-300 p-1 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
 							/>
 						</div>
-						<div className="w-[70%]">
+						<div className="w-full md:w-[70%]">
 							<label htmlFor="field2" className="block text-sm font-medium text-secondary">
 								Email
 							</label>
@@ -30,7 +30,7 @@ const SupportForm = () => {
 								className="mt-1 block w-full border-gray-300 p-1 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
 							/>
 						</div>
-						<div className="w-[70%]">
+						<div className="w-full md:w-[70%]">
 							<label htmlFor="field2" className="block text-sm font-medium text-secondary">
 								Phone Number
 							</label>
@@ -42,18 +42,18 @@ const SupportForm = () => {
 							/>
 						</div>
 
-						<div className="flex gap-2">
-							<div className="basis-2/6">Please identify me (tick)</div>
+						<div className="flex flex-col gap-2 md:flex-row">
+							<div className="basis-2/6 text-secondary">Please identify me (tick)</div>
 							<div className="w-full ">
-								<div className="flex gap-3">
+								<div className="flex gap-2">
 									<input type="checkbox" />{' '}
 									<label className="font-medium text-secondary">My subscription code</label>
 								</div>
-								<div className="flex gap-3">
+								<div className="flex gap-2">
 									<input type="checkbox" />
 									<label className="font-medium text-secondary">Database url</label>
 								</div>
-								<div className="flex gap-3">
+								<div className="flex gap-2">
 									<input type="checkbox" />
 									<label className="font-medium text-secondary">
 										I don't have the require informatio
@@ -64,7 +64,7 @@ const SupportForm = () => {
 										type="text"
 										id="field2"
 										name="field2"
-										className="mt-1 block w-full border-gray-300 p-1 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+										className="my-1 block w-full border-gray-300 p-1 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
 									/>
 									<label htmlFor="field2" className="block text-sm font-medium text-secondary">
 										Please sign in if you know your subscription number
@@ -72,26 +72,26 @@ const SupportForm = () => {
 								</div>
 							</div>
 						</div>
-						<div className="flex gap-2">
-							<div className="basis-2/6">Support type (tick)</div>
+						<div className="flex flex-col gap-2 md:flex-row">
+							<div className="basis-2/6 text-secondary">Support type (tick)</div>
 							<div className="w-full">
-								<div className="flex gap-3">
-									<input type="checkbox" />{' '}
+								<div className="flex gap-2">
+									<input type="checkbox" />
 									<label className="font-medium text-secondary">
 										about my subscription and/or billing
 									</label>
 								</div>
-								<div className="flex gap-3">
+								<div className="flex gap-2">
 									<input type="checkbox" />
 									<label className="font-medium text-secondary">
 										about the configuration/use of apps
 									</label>
 								</div>
-								<div className="flex gap-3">
+								<div className="flex gap-2">
 									<input type="checkbox" />
 									<label className="font-medium text-secondary">app problems/functionality</label>
 								</div>
-								<div className="flex gap-3">
+								<div className="flex gap-2">
 									<input type="checkbox" />
 									<label className="font-medium text-secondary">i can't access my database</label>
 								</div>
@@ -118,7 +118,7 @@ const SupportForm = () => {
 								type="text"
 								id="field2"
 								name="field2"
-								className="mt-1 block w-[60%] border-gray-300 p-1 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+								className="mt-1 block w-full border-gray-300 p-1 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm md:w-[60%]"
 							/>
 						</div>
 						<div className="flex w-full place-items-center gap-3">
@@ -129,7 +129,7 @@ const SupportForm = () => {
 								type="file"
 								id="field2"
 								name="field2"
-								className="mt-1 block w-auto basis-1/4 border-gray-300 bg-white p-1  sm:text-sm"
+								className="mt-1 block w-auto border-gray-300 bg-white p-1 sm:text-sm  md:basis-1/4"
 							/>
 						</div>
 						<div className="text-center">
@@ -137,8 +137,8 @@ const SupportForm = () => {
 						</div>
 					</div>
 				</div>
-				<div className="col-span-1 w-full">
-					<div className="relative mx-auto -mt-44 w-[70%] rounded-3xl bg-white p-14 text-left">
+				<div className="relative w-full md:col-span-1">
+					<div className="relative mx-auto w-full rounded-3xl bg-white p-8 text-left md:-mt-44 md:w-[70%] md:p-14">
 						<Heading tag="p" size="sm">
 							Support can be given in <br /> English and Arabic.
 						</Heading>
@@ -155,21 +155,17 @@ const SupportForm = () => {
 						</div>
 					</div>
 
-					<div className="absolute bottom-0  w-[70%] rounded-3xl p-14 text-left">
-						<Heading tag="p" size="sm">
-							Support can be given in <br /> English and Arabic.
+					<div className="relative bottom-0 rounded-3xl  p-5 text-left md:absolute md:w-[80%] md:p-14">
+						<Heading tag="p" size={18} className="mb-5">
+							Tips to help us
 						</Heading>
-						<div className="my-6">
-							<Heading tag="p" size="sm">
-								Here is what you can <br /> expect from our support.
-							</Heading>
-						</div>
-
-						<div className="my-6">
-							<Heading tag="p" size="sm">
-								Sign in to detect your <br /> information.
-							</Heading>
-						</div>
+						<Heading tag="p" variant={'dark'} size="sm">
+							The more information or details you can provide us with will help our support tean
+							resolve your problems as quickly as posible.
+						</Heading>
+						<Heading tag="p" size="sm" variant={'dark'} className="mt-5">
+							Please send us screen shots so we can better assess the problem
+						</Heading>
 					</div>
 				</div>
 			</div>

@@ -6,7 +6,7 @@ import Head from 'next/head';
 
 const CommunityHero = () => {
 	return (
-		<div className="relative h-full overflow-hidden pt-10 md:h-[650px]">
+		<div className="relative h-full overflow-hidden pt-5 md:h-[650px] md:pt-10">
 			<div className="grid h-full grid-flow-row grid-cols-2">
 				<div className="flex justify-center md:justify-end">
 					<di className="flex h-[150px] w-[150px] place-items-center justify-center rounded-full bg-secondary align-middle md:h-[500px] md:w-[500px]">

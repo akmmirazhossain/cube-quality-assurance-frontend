@@ -5,8 +5,13 @@ import Circle from '../atoms/Circle';
 const CommunityQaDocumentation = () => {
 	return (
 		<div className="relative w-full">
-			<div className="w-[832px relative">
-				<div className="relative z-10 w-full px-24 py-16">
+			{/*  */}
+			<div className="absolute hidden h-full w-full px-10 md:block">
+				<img src="/images/shapes/Community-QA.png" />
+			</div>
+
+			<div className="relative w-full">
+				<div className="relative ml-[18%] py-5 md:py-16">
 					<Heading tag={'p'} className={'text-dark'}>
 						<span className="font-light">QA</span>{' '}
 						<span className="font-medium">Documentation</span>
@@ -15,23 +20,25 @@ const CommunityQaDocumentation = () => {
 			</div>
 			{/* Absolute Middle container */}
 
-			<div className="grid h-full w-full place-items-center py-72">
+			<div className="relative grid h-full place-items-center md:py-72">
 				{/* Center element */}
-				<div className="relative h-[300px] w-[300px] rounded-full bg-dark md:h-[475px] md:w-[475px]">
-					<Circle
-						variant={'primary'}
-						position="topLeft"
-						title1="Software"
-						title2="Installation"
-						text="A comprehensive guide to initial software installation."
-					/>
-					<Circle
-						variant={'secondary'}
-						position="topRight"
-						title1="Tranning"
-						title2="Centre"
-						text="Access to all our eLearning platform & experience all the apps"
-					/>
+				<div className="relative h-[250px] w-[250px] rounded-full bg-dark md:h-[475px] md:w-[475px]">
+					<div className="hidden md:block">
+						<Circle
+							variant={'primary'}
+							position="topLeft"
+							title1="Software"
+							title2="Installation"
+							text="A comprehensive guide to initial software installation."
+						/>
+						<Circle
+							variant={'secondary'}
+							position="topRight"
+							title1="Tranning"
+							title2="Centre"
+							text="Access to all our eLearning platform & experience all the apps"
+						/>
+					</div>
 
 					<div className="relative grid h-full w-full place-items-center">
 						<div className="relative text-center">
@@ -49,8 +56,7 @@ const CommunityQaDocumentation = () => {
 							<div className="flex justify-center">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									width="120"
-									height="120"
+									className="h-14 w-14 sm:h-20 sm:w-20 md:h-28 md:w-28 lg:h-32 lg:w-32 xl:h-40 xl:w-40"
 									viewBox="0 0 120 120"
 									fill="none"
 								>
@@ -92,7 +98,38 @@ const CommunityQaDocumentation = () => {
 							</div>
 						</div>
 					</div>
-
+					<div className="hidden md:block">
+						<Circle
+							variant={'secondary'}
+							position="bottomLeft"
+							title1="White"
+							title2="Papers"
+							text="CRM comparison, Accounting com-parison, ecommerce etc"
+						/>
+						<Circle
+							variant={'primary'}
+							position="bottomRight"
+							title1="Legal"
+							title2="Documentation"
+							text="About Licensing and Contracts"
+						/>
+					</div>
+				</div>
+				<div className="relative my-5 grid grid-flow-row grid-cols-1 gap-5 md:hidden">
+					<Circle
+						variant={'primary'}
+						position="topLeft"
+						title1="Software"
+						title2="Installation"
+						text="A comprehensive guide to initial software installation."
+					/>
+					<Circle
+						variant={'secondary'}
+						position="topRight"
+						title1="Tranning"
+						title2="Centre"
+						text="Access to all our eLearning platform & experience all the apps"
+					/>
 					<Circle
 						variant={'secondary'}
 						position="bottomLeft"
@@ -108,6 +145,17 @@ const CommunityQaDocumentation = () => {
 						text="About Licensing and Contracts"
 					/>
 				</div>
+			</div>
+			<div className="relative w-full bg-solitude pt-4 md:absolute md:-bottom-2 md:right-[35%] md:w-auto md:bg-transparent md:pt-0">
+				<Heading tag="p" size="34" className={'text-center text-secondary md:text-white'}>
+					<span className="font-light">Submit a</span> <br /> Support Form
+				</Heading>
+			</div>
+
+			<div className="relative w-full bg-solitude md:absolute md:-bottom-[22%] md:-left-[20%] md:bg-transparent">
+				<Heading tag="p" size="34" className={'text-center text-secondary md:text-white'}>
+					Service support centre
+				</Heading>
 			</div>
 		</div>
 	);
