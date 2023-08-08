@@ -15,6 +15,8 @@ import {
 	Adobe,
 	Mango,
 	Oasis,
+	Sapentia,
+	TT,
 } from '../../public/images';
 
 import { ImFacebook } from 'react-icons/im';
@@ -280,5 +282,18 @@ export const WhatEveryonesSayingList = [
 		quote:
 			'The team prioritised our company’s needs and provided us with exactly the right product enhancemenmts that we needed.',
 		identity: 'Jay Chase, Founder <br/> @The Freelancing Institution',
+	},
+];
+
+export const ServicePartner = [
+	{
+		image: Sapentia,
+		content:
+			"With more than 100 projects successfully completed, we are the UK's  largest gold partner with our latest office opening in Belfast, Ireland in August 2021. We transform businesses with innovative ERP solutions delivered by our UK based, in-house consultants and developers, helping businesses operate efficiently and achieve competitive advantage.",
+	},
+	{
+		image: TT,
+		content:
+			"With more than 100 projects successfully completed, we are the UK's  largest gold partner with our latest office opening in Belfast, Ireland in August 2021. We transform businesses with innovative ERP solutions delivered by our UK based, in-house consultants and developers, helping businesses operate efficiently and achieve competitive advantage.",
 	},
 ];

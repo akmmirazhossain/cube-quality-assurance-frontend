@@ -39,8 +39,15 @@ html {
 	.community-inner-skew {
 		transform: skew(35deg);
 	}
-}
 
+	.bulb-bg-position {
+		background-position: right 10% center;
+	}
+
+	.bulb-bg-size {
+		background-size: 100px;
+	}
+}
 .container {
 	position: relative;
 	max-width: 1440px;

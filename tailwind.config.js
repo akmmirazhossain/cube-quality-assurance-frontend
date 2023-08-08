@@ -15,6 +15,9 @@ module.exports = {
 					},
 				],
 			},
+			borderRadius: {
+				35: '35px',
+			},
 			screens: {
 				xs: '412px',
 				// => @media (min-width: 412px) { ... }
@@ -39,6 +42,7 @@ module.exports = {
 				enterpriseHero: "url('/images/hero/Enterprise-Hero.png')",
 				appsModuleBg: "url('/images/shapes/AppsModuleVectorBg.png')",
 				communityQA: "url('/images/shapes/Community-QA.png",
+				searchBulb: "url('/images/icon/SearchBulb.png')",
 			},
 			colors: {
 				primary: '#077D83',
