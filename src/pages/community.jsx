@@ -1,14 +1,13 @@
-import TutorialSection from "../components/organisms/TutorialSection";
-
-
+import TutorialSection from '../components/organisms/TutorialSection';
+import Calender from '@/components/molecules/calendar';
 
 const Community = () => {
-    return (
-        <>
-            <TutorialSection />
-
-        </>
-    );
+	return (
+		<div className="container">
+			<TutorialSection />
+			<Calender />
+		</div>
+	);
 };
 
 export default Community;

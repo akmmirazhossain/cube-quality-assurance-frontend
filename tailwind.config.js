@@ -39,6 +39,7 @@ module.exports = {
 				enterpriseHero: "url('/images/hero/Enterprise-Hero.png')",
 				appsModuleBg: "url('/images/shapes/AppsModuleVectorBg.png')",
 				tutorialMagniLaptopBg: "url('/images/icon/tutorialMagniLaptopBg.png')",
+				questionMarks: "url('/images/questionMarks.png')",
 			},
 			colors: {
 				primary: '#077D83',
