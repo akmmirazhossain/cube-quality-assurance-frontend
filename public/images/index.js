@@ -32,6 +32,10 @@ import Partners from './icon/Partners.png';
 //community page
 import PersonGroup from './group/PersonGroup.png';
 
+//service partner
+import Sapentia from './icon/Sapentia.png';
+import TT from './icon/TT.png';
+
 export {
 	Logo,
 	LogoBack,
@@ -59,4 +63,6 @@ export {
 	Oasis,
 	Partners,
 	PersonGroup,
+	Sapentia,
+	TT,
 };
