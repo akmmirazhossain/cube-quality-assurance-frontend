@@ -30,6 +30,15 @@ html {
 		box-shadow: -346px -779px 0 346px #523249;
 		border-radius: 0 0 0 20px;
 	}
+
+	.community-hero-skew {
+		position: relative;
+		width: 80%;
+		transform: skew(-35deg);
+	}
+	.community-inner-skew {
+		transform: skew(35deg);
+	}
 }
 
 .container {

@@ -38,6 +38,7 @@ module.exports = {
 				inspectionModule: "url('/images/hero/InspectionModuleHero.png')",
 				enterpriseHero: "url('/images/hero/Enterprise-Hero.png')",
 				appsModuleBg: "url('/images/shapes/AppsModuleVectorBg.png')",
+				communityQA: "url('/images/shapes/Community-QA.png",
 			},
 			colors: {
 				primary: '#077D83',
