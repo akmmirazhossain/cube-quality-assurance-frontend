@@ -1,21 +1,11 @@
-import { useState } from 'react';
 import Image from 'next/image';
 import { BiSolidDownArrow } from 'react-icons/bi';
-import { LanguageList } from '@/constants/constants';
+import { useLanguageSelectContext } from '@/context/LanguageSelectProvider';
 
 const LanguageSelect = ({ footer = false, header = false }) => {
-	const [selectedLanguage, setSelectedLanguage] = useState(LanguageList[0]);
-	const [isListOpen, setIsListOpen] = useState(false);
-
-	const handleLanguageChange = (event, language) => {
-		event.stopPropagation();
-		setSelectedLanguage(language);
-		setIsListOpen(false);
-	};
-
-	const handleSelectClick = () => {
-		setIsListOpen(!isListOpen);
-	};
+	let languageSelectProps = useLanguageSelectContext();
+	let { selectedLanguage, isListOpen, LanguageList, handleLanguageChange, handleSelectClick } =
+		languageSelectProps;
 
 	return (
 		<div className="relative inline-block w-full" onClick={handleSelectClick}>
