@@ -34,7 +34,7 @@ const CommunityLookingForService = () => {
 						{ServicePartner.map(({ image, content }, index) => (
 							<div className="flex flex-col gap-5 md:my-6 md:flex-row" key={index}>
 								<div className="w-full basis-2/5">
-									<Image src={image} />
+									<Image src={image} alt="Service Partner" />
 								</div>
 								<p>{content}</p>
 							</div>

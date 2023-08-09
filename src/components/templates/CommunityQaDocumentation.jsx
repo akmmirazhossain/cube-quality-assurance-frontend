@@ -7,6 +7,7 @@ const CommunityQaDocumentation = () => {
 		<div className="relative w-full">
 			{/*  */}
 			<div className="absolute hidden h-full w-full px-10 md:block">
+				{/* eslint-disable-next-line jsx-a11y/alt-text, @next/next/no-img-element */}
 				<img src="/images/shapes/Community-QA.png" />
 			</div>
 
