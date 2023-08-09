@@ -3,8 +3,10 @@ import React from 'react';
 import { DesktopClickIcon } from '../../../public/images';
 import { Button } from '../atoms/Button';
 import Heading from '../atoms/Heading';
+import { useTranslation } from 'react-i18next';
 
 const AppModuleHeaderItem = () => {
+	let { t } = useTranslation();
 	return (
 		<div className="mx-auto px-5 md:max-w-[953px]">
 			<div className="grid gap-5 md:grid-cols-2">
@@ -37,7 +39,7 @@ const AppModuleHeaderItem = () => {
 							we have developed these app modules to make your life easier.
 						</p>
 					</div>
-					<Button className="mt-4">Learn More</Button>
+					<Button className="mt-4">{t('learnMore')}</Button>
 				</div>
 			</div>
 		</div>

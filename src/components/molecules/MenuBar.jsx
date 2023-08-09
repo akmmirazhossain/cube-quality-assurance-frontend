@@ -1,9 +1,12 @@
 import { NavList } from '@/constants/constants';
+import { isRTL } from '@/constants/utils';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { BiSolidDownArrow } from 'react-icons/bi';
 
 const MenuBar = () => {
+	let isRtl = isRTL();
 	const [activeSubmenu, setActiveSubmenu] = useState(null);
 	const [activeNestedSubmenu, setActiveNestedSubmenu] = useState(null);
 	const toggleSubmenu = (index) => {
@@ -14,7 +17,7 @@ const MenuBar = () => {
 	};
 
 	return (
-		<div className="relative md:-ml-[150px]">
+		<div className={`relative ${isRtl ? 'md:-mr-[150px]' : 'md:-ml-[150px]'}`}>
 			<div className="relative z-50 mx-auto w-full">
 				<div className="relative flex w-full py-5">
 					<div className="flex flex-col gap-4 pb-3 sm:px-3 md:flex-row">

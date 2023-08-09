@@ -20,15 +20,35 @@ html {
 		top: 50px;
 		left: -35px;
 	}
+	.rtl-module-skew {
+		width: 70%;
+		transform: skew(-27.4deg);
+		border-radius: 0 0 45px 20px;
+		margin: 0 auto;
+		box-shadow: 146px 0px #077d83;
+		position: relative;
+		top: 50px;
+		right: -35px;
+	}
 
 	.module-skew-inner {
 		transform: skew(-27.4deg);
 		display: inline-block;
 	}
+
+	.rtl-module-skew-inner {
+		transform: skew(27.4deg);
+	}
+
 	.regular-skew {
 		transform: skew(27.4deg);
 		box-shadow: -346px -779px 0 346px #523249;
 		border-radius: 0 0 0 20px;
+	}
+	.rtl-regular-skew {
+		transform: skew(-27.4deg);
+		box-shadow: 346px -779px 0 346px #523249;
+		border-radius: 0 0 10px 20px;
 	}
 
 	.community-hero-skew {

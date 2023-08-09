@@ -1,9 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
 import { Button } from '../atoms/Button';
-import { LowerSectionVArt } from '../../../public/images';
+import { LowerSectionVArt, RtlLowerSectionVArt } from '../../../public/images';
+import { useTranslation } from 'react-i18next';
+import { isRTL } from '@/constants/utils';
 
 const OnePlatform = () => {
+	let { t } = useTranslation();
 	return (
 		<div className="container flex-col bg-solitude p-5 first-letter:flex md:h-[470px] md:flex-row md:p-0">
 			<div className="mx-auto px-5 md:h-[405px] md:w-[953px]">
@@ -20,16 +23,21 @@ const OnePlatform = () => {
 
 					<div className="flex flex-col justify-center md:py-4">
 						<p className="text-lg font-light text-secondary md:text-2xl md:leading-[38px]">
-							Automate the quality assurance procedure of your business by managing all your
-							distributors from
+							{t('onePlatformText')}
 						</p>
 
 						<div className="mt-4 flex flex-row">
-							<h1 className="text-4xl font-light text-secondary md:text-5xl">One Platform</h1>
-							<Image src={LowerSectionVArt} className="relative -ml-6 pt-1" alt="check icon" />
+							<h1 className="text-4xl font-light text-secondary md:text-5xl">
+								{t('onePlatformTitle')}
+							</h1>
+							{isRTL() ? (
+								<Image src={RtlLowerSectionVArt} className="relative -mr-6 pt-1" alt="check icon" />
+							) : (
+								<Image src={LowerSectionVArt} className="relative -ml-6 pt-1" alt="check icon" />
+							)}
 						</div>
 
-						<Button className="mt-4">Learn More</Button>
+						<Button className="mt-4">{t('learnMore')}</Button>
 					</div>
 				</div>
 			</div>

@@ -2,13 +2,18 @@ import { AppModuleList } from '@/constants/constants';
 import React from 'react';
 import { Button } from '../atoms/Button';
 import Heading from '../atoms/Heading';
+import { isRTL } from '@/constants/utils';
 
 const EnterprisePlan = () => {
 	return (
 		<div className="h-full">
-			<div className="md:module-skew bg-primary">
+			<div className={`${isRTL() ? 'md:rtl-module-skew' : 'md:module-skew'} bg-primary`}>
 				<div className="relative">
-					<div className="md:module-skew-inner relative p-5 px-10 text-white md:-left-32 md:px-0">
+					<div
+						className={`${
+							isRTL() ? 'md:rtl-module-skew-inner' : 'md:module-skew-inner'
+						} relative p-5 px-10 text-white md:-left-32 md:px-0`}
+					>
 						<div className="relative w-full text-center">
 							<Heading variant={'white'} size={'md'} weight={'medium'}>
 								Enterprise
