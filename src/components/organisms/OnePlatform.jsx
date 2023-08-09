@@ -6,7 +6,7 @@ import { LowerSectionVArt } from '../../../public/images';
 const OnePlatform = () => {
 	return (
 		<div className="container flex-col bg-solitude p-5 first-letter:flex md:h-[470px] md:flex-row md:p-0">
-			<div className="mx-auto px-5 md:h-[405px] md:w-[953px]">
+			<div className="mx-auto px-5 ">
 				<div className="grid h-full grid-cols-1 gap-5 md:w-full md:grid-cols-2">
 					<div className="flex items-center justify-center md:justify-start">
 						<div className=" h-[203px] w-[203px] rounded-full bg-secondary p-4 md:h-[303px] md:w-[303px]">

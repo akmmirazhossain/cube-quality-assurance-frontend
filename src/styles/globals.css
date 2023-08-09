@@ -11,7 +11,7 @@ html {
 
 @layer utilities {
 	.module-skew {
-		width: 70%;
+		width: 60%;
 		transform: skew(27.4deg);
 		border-radius: 0 0 45px 20px;
 		margin: 0 auto;

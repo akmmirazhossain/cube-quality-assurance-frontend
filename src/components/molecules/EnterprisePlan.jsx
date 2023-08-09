@@ -8,13 +8,14 @@ const EnterprisePlan = () => {
 		<div className="h-full">
 			<div className="md:module-skew bg-primary">
 				<div className="relative">
-					<div className="md:module-skew-inner relative p-5 px-10 text-white md:-left-32 md:px-0">
+					<div className="md:module-skew-inner relative p-5 px-10 text-white md:-left-32 md:px-0 xl:pt-12">
 						<div className="relative w-full text-center">
 							<Heading variant={'white'} size={'md'} weight={'medium'}>
 								Enterprise
 							</Heading>
 							<span className="text-base font-light">for small business chain</span>
-							<p className="mt-2 px-4 text-base font-normal md:px-14 md:text-lg md:font-medium">
+
+							<p className="xl:text-md text-sm md:text-lg">
 								with custom branding and on-demand support for the following modules:
 							</p>
 						</div>

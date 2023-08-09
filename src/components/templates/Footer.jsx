@@ -6,6 +6,8 @@ import { FooterSocialList } from '@/constants/constants';
 import FooterServices from '../organisms/FooterServices';
 import FooterAboutUs from '../organisms/FooterAboutUs';
 
+import ScreenWidthPrinter from '@/hooks/ScreenWidthPrinter';
+
 const Footer = () => {
 	return (
 		<div className="container relative h-auto w-full bg-dark">
@@ -48,6 +50,8 @@ const Footer = () => {
 					<span>Copyright © {new Date().getFullYear()} QA. All rights reserved.</span>
 				</div>
 			</div>
+
+			<ScreenWidthPrinter />
 		</div>
 	);
 };
