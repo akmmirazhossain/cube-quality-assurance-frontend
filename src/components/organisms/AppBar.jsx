@@ -26,7 +26,7 @@ const AppBar = () => {
 						<div className="relative hidden h-auto align-middle md:block">
 							<div className="flex place-items-center justify-between">
 								<MenuBar />
-								{/* <MenuRightAction /> */}
+								<MenuRightAction />
 							</div>
 						</div>
 					</div>
