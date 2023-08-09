@@ -1,4 +1,5 @@
 import leaderboard from '@/data/leaderboard';
+import Image from 'next/image';
 
 const TutorialSection = () => {
 	return (
@@ -31,7 +32,12 @@ const TutorialSection = () => {
 
 						<div className="flex justify-center">
 							{/* video player */}
-							<img className="w-full md:w-full" src="/images/videoplayer.png" />
+
+							<Image
+								className="w-full md:w-full"
+								src="/images/videoplayer.png"
+								alt="Video Player"
+							/>
 						</div>
 					</div>
 					<div className="mt-6 flex flex-col  md:flex-row md:justify-between">
