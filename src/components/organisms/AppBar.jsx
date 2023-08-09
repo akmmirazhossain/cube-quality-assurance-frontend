@@ -15,8 +15,8 @@ const AppBar = () => {
 	const [mobileMenu, setMobileMenu] = useState(false);
 	const router = useRouter();
 	return (
-		<>
-			<div className="container bg-solitude">
+		<div className="bg-solitude">
+			<div className="container">
 				{/* Desktp Navigation */}
 				<div className=" mx-auto hidden w-[90%] md:block">
 					<div className="grid grid-cols-2">
@@ -83,7 +83,7 @@ const AppBar = () => {
 					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 

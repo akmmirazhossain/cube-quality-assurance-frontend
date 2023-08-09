@@ -3,6 +3,7 @@ import Heading from '../atoms/Heading';
 import { Faqs } from '@/constants/constants';
 import { Collapse } from 'react-collapse';
 import { BiSolidMinusCircle, BiSolidPlusCircle } from 'react-icons/bi';
+import { isRTL } from '@/constants/utils';
 
 const CommunityFaq = () => {
 	const [activeIndex, setActiveIndex] = useState(null);
@@ -20,7 +21,11 @@ const CommunityFaq = () => {
 					then you&apos;re in the right place
 				</Heading>
 			</div>
-			<div className="relative flex h-full w-full flex-col px-10 py-5 md:left-[25%] md:w-[60%] md:px-0">
+			<div
+				className={`relative flex h-full w-full flex-col px-10 py-5 ${
+					isRTL() ? 'md:right-10' : 'md:left-[25%]'
+				}  md:w-[60%] md:px-0`}
+			>
 				{Faqs.map(({ title, id, content }, index) => (
 					<div className="my-1 flex flex-row gap-5" key={id}>
 						{activeIndex === index ? (
