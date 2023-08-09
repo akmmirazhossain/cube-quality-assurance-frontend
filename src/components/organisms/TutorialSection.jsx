@@ -31,6 +31,7 @@ const TutorialSection = () => {
 
 						<div className="flex justify-center">
 							{/* video player */}
+							{/* eslint-disable-next-line jsx-a11y/alt-text, @next/next/no-img-element */}
 							<img className="w-full md:w-full" src="/images/videoplayer.png" />
 						</div>
 					</div>

@@ -1,4 +1,4 @@
-export default [
+const leaderBoard = [
 	{
 		title: 'Custom Fields',
 		views: '1,253k',
@@ -32,3 +32,5 @@ export default [
 		views: '399',
 	},
 ];
+
+export default leaderBoard;

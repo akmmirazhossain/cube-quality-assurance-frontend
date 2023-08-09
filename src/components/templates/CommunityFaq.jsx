@@ -3,7 +3,6 @@ import Heading from '../atoms/Heading';
 import { Faqs } from '@/constants/constants';
 import { Collapse } from 'react-collapse';
 import { BiSolidMinusCircle, BiSolidPlusCircle } from 'react-icons/bi';
-import { Button } from '../atoms/Button';
 
 const CommunityFaq = () => {
 	const [activeIndex, setActiveIndex] = useState(null);

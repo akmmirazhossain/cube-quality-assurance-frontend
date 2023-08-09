@@ -56,7 +56,7 @@ const SupportForm = () => {
 								<div className="flex gap-2">
 									<input type="checkbox" />
 									<label className="font-medium text-secondary">
-										I don't have the require informatio
+										I don&apos;t have the require information
 									</label>
 								</div>
 								<div className="w-full">
@@ -93,7 +93,9 @@ const SupportForm = () => {
 								</div>
 								<div className="flex gap-2">
 									<input type="checkbox" />
-									<label className="font-medium text-secondary">i can't access my database</label>
+									<label className="font-medium text-secondary">
+										i can&apos;t access my database
+									</label>
 								</div>
 								<div className="flex w-full items-center gap-3">
 									<input type="checkbox" id="field2" name="field2" />
