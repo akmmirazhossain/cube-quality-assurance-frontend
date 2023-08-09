@@ -1,21 +1,11 @@
-import { useState } from 'react';
 import Image from 'next/image';
 import { BiSolidDownArrow } from 'react-icons/bi';
-import { LanguageList } from '@/constants/constants';
+import { useLanguageSelectContext } from '@/context/LanguageSelectProvider';
 
 const LanguageSelect = ({ footer = false, header = false }) => {
-	const [selectedLanguage, setSelectedLanguage] = useState(LanguageList[0]);
-	const [isListOpen, setIsListOpen] = useState(false);
-
-	const handleLanguageChange = (event, language) => {
-		event.stopPropagation();
-		setSelectedLanguage(language);
-		setIsListOpen(false);
-	};
-
-	const handleSelectClick = () => {
-		setIsListOpen(!isListOpen);
-	};
+	let languageSelectProps = useLanguageSelectContext();
+	let { selectedLanguage, isListOpen, LanguageList, handleLanguageChange, handleSelectClick } =
+		languageSelectProps;
 
 	return (
 		<div className="relative inline-block w-full" onClick={handleSelectClick}>
@@ -26,7 +16,7 @@ const LanguageSelect = ({ footer = false, header = false }) => {
 							header ? 'text-secondary' : 'text-white'
 						}`}
 					>
-						<span className="flex items-center">
+						<span className="flex items-center gap-2">
 							<Image
 								src={selectedLanguage.icon}
 								alt={selectedLanguage.title}
@@ -51,7 +41,7 @@ const LanguageSelect = ({ footer = false, header = false }) => {
 				) : (
 					<span className="flex cursor-pointer place-items-center justify-center rounded align-middle leading-tight text-white">
 						<div className="flex place-items-center justify-center align-middle">
-							<span className="flex items-center">
+							<span className="flex place-items-center items-center">
 								<Image
 									src={selectedLanguage.icon}
 									alt={selectedLanguage.title}
@@ -68,7 +58,7 @@ const LanguageSelect = ({ footer = false, header = false }) => {
 			</div>
 			{isListOpen && (
 				<ul
-					className={`absolute left-0 z-10 mt-2 rounded-lg border  text-black  ${
+					className={`absolute left-0 z-10 mt-2 place-content-center rounded-lg border  text-black  ${
 						footer || header ? 'w-full border-gray-300 bg-white shadow-md' : ''
 					}`}
 					onClick={(e) => e.stopPropagation()}
@@ -79,7 +69,7 @@ const LanguageSelect = ({ footer = false, header = false }) => {
 							className="cursor-pointer px-2 py-2 hover:rounded-lg hover:bg-gray-100"
 							onClick={(e) => handleLanguageChange(e, language)}
 						>
-							<span className="flex items-center">
+							<span className="flex items-center gap-2">
 								<Image src={language.icon} alt={language.title} className="mr-2 h-6 w-6" />
 								{(footer || header) && language.title}
 							</span>
