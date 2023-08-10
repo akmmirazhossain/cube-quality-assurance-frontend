@@ -30,95 +30,68 @@ const TutorialSection = () => {
 					<div className="">Documentation</div>
 				</div>
 
-				<div className="flex justify-center">
-					{/* video player */}
+				<div className="relative grid grid-cols-1 gap-5 md:grid-cols-3 md:px-4">
+					<div className="relative col-span-2 mx-auto w-full md:px-8">
+						{/* video player */}
+						{/* eslint-disable-next-line jsx-a11y/alt-text, @next/next/no-img-element */}
+						<Image className="w-full md:w-full" src={VideoPlayer} alt="video player" />
 
-					<Image className="w-full md:w-full" src={VideoPlayer} alt="Video Player" />
-				</div>
-			</div>
-			<div className="mt-6 flex flex-col  md:flex-row md:justify-between">
-				{/* dropdowns */}
-				<div className="w-full md:w-[50%]">
-					{/* left dropdown */}
-					<p className="font-bold  text-primary">Most popular courses</p>
-					<select
-						id="field6"
-						name="field6"
-						className="via-white-100 mt-1 block w-full border-gray-300 bg-gradient-to-br from-gray-100 to-gray-100 p-1 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:w-full sm:text-sm md:w-[85%]"
-					>
-						<option value="">---</option>
-						<option value="option2">Option 1</option>
-						<option value="option3">Option 2</option>
-					</select>
-				</div>
-				<div className="w-full md:w-[50%]">
-					{/* right dropdown */}
-					<p className="font-bold text-primary">Newest courses</p>
-					<select
-						id="field6"
-						name="field6"
-						className="via-white-100 mt-1 block w-full border-gray-300 bg-gradient-to-br from-gray-100 to-gray-100 p-1 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:w-full sm:text-sm md:w-[85%]"
-					>
-						<option value="">---</option>
-						<option value="option2">Option 1</option>
-						<option value="option3">Option 2</option>
-					</select>
+						<div className="mt-6 flex flex-col  md:flex-row md:justify-between">
+							{/* dropdowns */}
+							<div className="w-full md:w-[50%]">
+								{/* left dropdown */}
+								<p className="font-bold  text-primary">Most popular courses</p>
+								<select
+									id="field6"
+									name="field6"
+									className="via-white-100 mt-1 block w-full border-gray-300 bg-gradient-to-br from-gray-100 to-gray-100 p-1 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:w-full sm:text-sm md:w-[85%]"
+								>
+									<option value="">---</option>
+									<option value="option2">Option 1</option>
+									<option value="option3">Option 2</option>
+								</select>
+							</div>
+							<div className="w-full md:w-[50%]">
+								{/* right dropdown */}
+								<p className="font-bold text-primary">Newest courses</p>
+								<select
+									id="field6"
+									name="field6"
+									className="via-white-100 mt-1 block w-full border-gray-300 bg-gradient-to-br from-gray-100 to-gray-100 p-1 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:w-full sm:text-sm md:w-[85%]"
+								>
+									<option value="">---</option>
+									<option value="option2">Option 1</option>
+									<option value="option3">Option 2</option>
+								</select>
 
-					<div className="mt-6 flex flex-col  md:flex-row md:justify-between">
-						{/* dropdowns */}
-						<div className="w-full md:w-[50%]">
-							{/* left dropdown */}
-							<p className="font-bold  text-primary">Most popular courses</p>
-							<select
-								id="field6"
-								name="field6"
-								className="via-white-100 mt-1 block w-full border-gray-300 bg-gradient-to-br from-gray-100 to-gray-100 p-1 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:w-full sm:text-sm md:w-[85%]"
-							>
-								<option value="">---</option>
-								<option value="option2">Option 1</option>
-								<option value="option3">Option 2</option>
-							</select>
-						</div>
-						<div className="w-full md:w-[50%]">
-							{/* right dropdown */}
-							<p className="font-bold text-primary">Newest courses</p>
-							<select
-								id="field6"
-								name="field6"
-								className="via-white-100 mt-1 block w-full border-gray-300 bg-gradient-to-br from-gray-100 to-gray-100 p-1 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:w-full sm:text-sm md:w-[85%]"
-							>
-								<option value="">---</option>
-								<option value="option2">Option 1</option>
-								<option value="option3">Option 2</option>
-							</select>
-
-							<div className="p-3 text-xs text-primary md:text-xs">
-								<p className="font-bold text-primary">Accounting and invoicing</p>
-								<ul>
-									<li>Manufacturing Inventory Management</li>
-									<li>Standard Accounting</li>
-									<li>Usage Tips </li>
-									<li>Setting up: User Management</li>
-									<li>Setting up: Business Details, Working Hours, PDF Editor</li>
-									<li>Setting up: Procured Items, Purchase Terms</li>
-								</ul>
+								<div className="p-3 text-xs text-primary md:text-xs">
+									<p className="font-bold text-primary">Accounting and invoicing</p>
+									<ul>
+										<li>Manufacturing Inventory Management</li>
+										<li>Standard Accounting</li>
+										<li>Usage Tips </li>
+										<li>Setting up: User Management</li>
+										<li>Setting up: Business Details, Working Hours, PDF Editor</li>
+										<li>Setting up: Procured Items, Purchase Terms</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<div className={`col-span-1 w-full bg-solitude p-5 md:mt-[68px] lg:mt-[198px]`}>
-					{/* Right course LIST */}
-					<p className="text-sm font-medium text-secondary lg:text-base">Leaderboard by Views</p>
-					{leaderboard.map((val, key) => (
-						<div className="flex justify-between gap-2 py-3 text-sm text-secondary" key={key}>
-							<div className="w-auto">{key + 1}</div>
-							<div className="w-full">{val.title}</div>
-							<div className="grid flex-auto place-items-center bg-secondary text-center text-white md:w-auto md:px-1 lg:w-[30%] lg:px-3">
-								{val.views}
+					<div className={`col-span-1 w-full bg-solitude p-5 md:mt-[68px] lg:mt-[198px]`}>
+						{/* Right course LIST */}
+						<p className="text-sm font-medium text-secondary lg:text-base">Leaderboard by Views</p>
+						{leaderboard.map((val, key) => (
+							<div className="flex justify-between gap-2 py-3 text-sm text-secondary" key={key}>
+								<div className="w-auto">{key + 1}</div>
+								<div className="w-full">{val.title}</div>
+								<div className="grid flex-auto place-items-center bg-secondary text-center text-white md:w-auto md:px-1 lg:w-[30%] lg:px-3">
+									{val.views}
+								</div>
 							</div>
-						</div>
-					))}
+						))}
+					</div>
 				</div>
 			</div>
 		</div>
