@@ -6,7 +6,7 @@ import { isRTL } from '@/constants/utils';
 
 const LogoPrimary = () => {
 	return (
-		<div className="relative w-[557px] flex-auto ">
+		<div className="relative flex-auto md:w-[557px] ">
 			<div
 				className={`relative h-[470px] ${
 					isRTL() ? "bg-[url('/images/logoBackRTL.png')]" : "bg-[url('/images/logoBack.png')]"

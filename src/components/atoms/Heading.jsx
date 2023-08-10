@@ -12,7 +12,7 @@ const headerDesign = cva('leading-normal', {
 		size: {
 			lg: 'text-2xl md:text-5xl',
 			md: 'text-[32px]',
-			40: 'text-[20px] md:text-[40px]',
+			40: 'text-[20px] md:text-[38px] lg:text-[40px]',
 			sm: 'text-base',
 			34: 'text-lg md:text-[34px]',
 			18: 'text-[18px]',

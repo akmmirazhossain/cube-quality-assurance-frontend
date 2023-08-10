@@ -11,6 +11,7 @@ import { LogoSecondaryIcon } from '../../../public/images';
 import { TfiClose } from 'react-icons/tfi';
 import LanguageSelect from '../molecules/LanguageSelect';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { isRTL } from '@/constants/utils';
 const AppBar = () => {
 	const [mobileMenu, setMobileMenu] = useState(false);
 	const router = useRouter();
@@ -18,52 +19,55 @@ const AppBar = () => {
 		<div className="bg-solitude">
 			<div className="container">
 				{/* Desktp Navigation */}
-				<div className=" mx-auto hidden w-[90%] md:block">
-					<div className="grid grid-cols-2">
+				<div className="hidden lg:block">
+					<div className={`grid grid-cols-2`}>
 						{router.pathname === '/' ? <LogoPrimary /> : <LogoSecondary />}
 
 						{/* Desktop Navigation */}
-						<div className="relative hidden h-auto align-middle md:block">
+						<div className="relative hidden h-auto align-middle lg:block">
 							<div className="flex place-items-center justify-between">
-								<MenuBar />
-								<MenuRightAction />
+								<div className="flex-none">
+									<MenuBar />
+								</div>
+								<div className="flex-none lg:block ">
+									<MenuRightAction />
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				{/* Mobile Navigation */}
-				<div className="relative z-10 flex w-full place-items-center items-center justify-between p-5 md:hidden">
+				<div className="relative z-10 flex w-full place-items-center justify-between py-5 align-middle lg:hidden">
 					<div className=" max-w-sm">
 						<Link href={'/'} className="h-auto w-full">
 							<Image src={LogoSecondaryIcon} className="w-full" alt={'QA Logo'} />
 						</Link>
 					</div>
-					<Button
+					<button
 						className={'bg-transparent text-2xl text-primary duration-500 ease-in'}
 						onClick={() => setMobileMenu(!mobileMenu)}
 					>
 						<RxHamburgerMenu />
-					</Button>
+					</button>
 				</div>
 			</div>
 
 			{/* Shwoing mobile navigation */}
 
 			<div
-				className={`fixed z-10 h-full w-screen bg-solitude duration-500 ease-in-out md:hidden ${
+				className={`fixed z-10 h-full w-screen bg-solitude duration-500 ease-in-out lg:hidden ${
 					mobileMenu ? 'translate-y-0' : 'translate-y-full'
 				}`}
 			>
-				<div className="h-full w-full px-5 py-3">
-					<div className="right-0 flex justify-end">
-						<Button
-							variant={'danger'}
+				<div className="container h-full w-full">
+					<div className={`${isRTL() ? 'left-0 justify-start' : 'right-0 justify-end'} flex `}>
+						<button
 							className={'bg-transparent text-xl text-red-600 duration-500 ease-in'}
 							onClick={() => setMobileMenu(!mobileMenu)}
 						>
 							<TfiClose />
-						</Button>
+						</button>
 					</div>
 
 					<MenuBar />

@@ -8,7 +8,7 @@ const MenuRightAction = () => {
 	let { t } = useTranslation();
 	return (
 		<div className="relative -mt-2 flex place-items-center gap-4 px-2 align-middle text-sm">
-			<Link href={'signin'} className="mr-2  font-normal">
+			<Link href={'signin'} className="mr-2 font-normal text-secondary">
 				{t('signIn')}
 			</Link>
 			<Button href={'demo'} size={'small'} className={`h-auto`}>
