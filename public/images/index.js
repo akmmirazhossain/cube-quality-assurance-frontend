@@ -1,4 +1,5 @@
 import LogoBack from './LogoBack.png';
+import LogoBackRTL from './LogoBackRTL.png';
 import Logo from './logo.png';
 import LogoSecondaryIcon from './LogoSecondary.png';
 
@@ -14,11 +15,13 @@ import DistributorIcon from './icon/Distributor.png';
 import InspectorMobileAppIcon from './icon/InspectorMobileApp.png';
 import Person from './Person.png';
 import LowerSectionVArt from './icon/LowerSectionVArt.png';
+import RtlLowerSectionVArt from './icon/RtlLowerSectionVArt.png';
 import English from './language/English.png';
 import Arabic from './language/Arabic.png';
 
 //Shapes
 import HalfRound from './shapes/HalfRound.png';
+import RTLAppModulesGrayBg from './shapes/RTLAppModulesGrayBg.png';
 
 //inspection manager moduel page images
 import MacbookPro from './macbook-pro.png';
@@ -39,6 +42,7 @@ import TT from './icon/TT.png';
 export {
 	Logo,
 	LogoBack,
+	LogoBackRTL,
 	LogoSecondaryIcon,
 	DesktopClickIcon,
 	CompanyAdminIcon,
@@ -52,6 +56,7 @@ export {
 	InspectorMobileAppIcon,
 	Person,
 	LowerSectionVArt,
+	RtlLowerSectionVArt,
 	English,
 	Arabic,
 	HalfRound,
@@ -65,4 +70,5 @@ export {
 	PersonGroup,
 	Sapentia,
 	TT,
+	RTLAppModulesGrayBg,
 };

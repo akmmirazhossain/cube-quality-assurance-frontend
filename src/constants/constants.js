@@ -150,11 +150,15 @@ export const LanguageList = [
 		id: 1,
 		title: 'English',
 		icon: English,
+		slug: 'en',
+		direction: 'ltr',
 	},
 	{
 		id: 2,
 		title: 'Arabic',
 		icon: Arabic,
+		slug: 'ar',
+		direction: 'rtl',
 	},
 ];
 

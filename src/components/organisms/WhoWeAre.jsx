@@ -20,7 +20,7 @@ const WhoWeAre = () => {
 				</p>
 			</div>
 
-			<div className="flex items-center justify-center md:col-span-2 ">
+			<div className="flex items-center justify-center pb-8 md:col-span-2">
 				<div className="flex h-[17rem] w-[17rem] items-end justify-center overflow-hidden rounded-full bg-primary md:h-[17rem] md:w-[17rem] lg:h-[24rem] lg:w-[24rem] xl:h-[28rem] xl:w-[28rem]">
 					<Image src={Person} className="  xl:w-68  w-44  md:w-44 lg:w-60 " alt="user image" />
 				</div>

@@ -2,15 +2,17 @@ import Link from 'next/link';
 import React from 'react';
 import { Button } from '../atoms/Button';
 import LanguageSelect from './LanguageSelect';
+import { useTranslation } from 'react-i18next';
 
 const MenuRightAction = () => {
+	let { t } = useTranslation();
 	return (
 		<div className="relative -mt-2 flex place-items-center gap-4 px-2 align-middle text-sm">
 			<Link href={'signin'} className="mr-2  font-normal">
-				Sign in
+				{t('signIn')}
 			</Link>
 			<Button href={'demo'} size={'small'} className={`h-auto`}>
-				Get Demo
+				{t('getDemo')}
 			</Button>
 			<div className="relative text-center">
 				<div className="text-sm font-normal">

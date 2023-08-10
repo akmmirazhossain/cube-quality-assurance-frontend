@@ -2,7 +2,6 @@ import Image from 'next/image';
 import React from 'react';
 import { PersonGroup } from '../../../public/images';
 import Heading from '../atoms/Heading';
-import Head from 'next/head';
 
 const CommunityHero = () => {
 	return (
@@ -27,6 +26,7 @@ const CommunityHero = () => {
 				<div className="relative h-full w-full">
 					<div className="community-hero-skew h-full w-full overflow-hidden rounded-bl-3xl rounded-br-lg bg-solitude md:-right-20 md:rounded-bl-3xl md:rounded-br-xl">
 						<div className="community-inner-skew relative h-full w-full">
+							{/* eslint-disable-next-line jsx-a11y/alt-text */}
 							<Image
 								src={PersonGroup}
 								alr={'Person Group'}

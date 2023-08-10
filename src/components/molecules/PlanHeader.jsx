@@ -1,9 +1,14 @@
+import { isRTL } from '@/constants/utils';
 import Heading from '../atoms/Heading';
 
 const PlanHeader = () => {
 	return (
 		<div className="max-w-screen relative min-h-[280px]">
-			<div className="relative inset-0 h-full w-full md:absolute md:left-[50%] md:max-w-[550px]">
+			<div
+				className={`relative inset-0 h-full w-full md:absolute ${
+					isRTL() ? 'md:right-[50%]' : ' md:left-[50%]'
+				} md:max-w-[550px]`}
+			>
 				<div className="mx-auto w-full md:w-full">
 					<div className="text-center text-secondary">
 						<Heading variant={'secondary'} weight={'light'}>

@@ -17,6 +17,10 @@ i18n.use(initReactI18next).init({
 	interpolation: {
 		escapeValue: false,
 	},
+	languages: {
+		en: 'ltr', // English is Left-to-Right
+		ar: 'rtl', // Arabic is Right-to-LeftF
+	},
 });
 
 i18n.languages = ['en', 'ar'];

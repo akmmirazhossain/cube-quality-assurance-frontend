@@ -15,10 +15,10 @@ const AppBar = () => {
 	const [mobileMenu, setMobileMenu] = useState(false);
 	const router = useRouter();
 	return (
-		<>
-			<div className="container bg-solitude">
+		<div className="bg-solitude">
+			<div className="container">
 				{/* Desktp Navigation */}
-				<div className=" mx-auto hidden w-[90%] md:block">
+				<div className=" mx-auto hidden md:block">
 					<div className="grid grid-cols-2">
 						{router.pathname === '/' ? <LogoPrimary /> : <LogoSecondary />}
 
@@ -26,7 +26,7 @@ const AppBar = () => {
 						<div className="relative hidden h-auto align-middle md:block">
 							<div className="flex place-items-center justify-between">
 								<MenuBar />
-								<MenuRightAction />
+								{/* <MenuRightAction /> */}
 							</div>
 						</div>
 					</div>
@@ -83,7 +83,7 @@ const AppBar = () => {
 					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 
