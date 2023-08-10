@@ -4,12 +4,12 @@ import CommunityLookingForService from '@/components/templates/CommunityLookingF
 import CommunityQaDocumentation from '@/components/templates/CommunityQaDocumentation';
 import SupportForm from '@/components/templates/SupportForm';
 import TutorialSection from '../components/organisms/TutorialSection';
-import Calender from '@/components/molecules/calendar';
+import Calender from '@/components/molecules/Calendar';
 import React from 'react';
 
 const Community = () => {
 	return (
-		<div className="container">
+		<>
 			<CommunityHero />
 			<TutorialSection />
 			<CommunityQaDocumentation />
@@ -17,7 +17,7 @@ const Community = () => {
 			<CommunityLookingForService />
 			<Calender />
 			<CommunityFaq />
-		</div>
+		</>
 	);
 };
 

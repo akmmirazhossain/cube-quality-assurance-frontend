@@ -35,7 +35,7 @@ export const HEADER_HEIGHT = 300;
 export const NavList = [
 	{
 		id: 1,
-		path: '#',
+		path: '/inspection-manager-module',
 		name: 'App Modules',
 		submenu: [
 			{ id: 11, path: '/tutorials', name: 'Tutorials' },
@@ -47,20 +47,31 @@ export const NavList = [
 	},
 	{
 		id: 2,
-		path: '#',
+		path: '/community',
 		name: 'Community',
 		submenu: [
-			{ id: 21, path: '/tutorials', name: 'Tutorials' },
-			{ id: 22, path: '/who-we-are', name: 'Documentation' },
-			{ id: 23, path: '/support-form', name: 'Support form' },
-			{ id: 24, path: '/find-a-partner', name: 'Find a partner' },
-			{ id: 25, path: '/meet-an-expert', name: 'Meet an expert' },
+			{ id: 21, path: '/community#tutorials', name: 'Tutorials' },
+			{ id: 22, path: '/community#who-we-are', name: 'Documentation' },
+			{ id: 23, path: '/community#support-form', name: 'Support form' },
+			{ id: 24, path: '/community#find-a-partner', name: 'Find a partner' },
+			{ id: 25, path: '/community#meet-an-expert', name: 'Meet an expert' },
 		],
 	},
-	{ id: 3, path: '/about-us', name: 'About Us' },
+	{
+		id: 3,
+		path: '/about-us',
+		name: 'About Us',
+		submenu: [
+			{ id: 41, path: '/tutorials', name: 'Tutorials' },
+			{ id: 42, path: '/who-we-are', name: 'Documentation' },
+			{ id: 43, path: '/support-form', name: 'Support form' },
+			{ id: 44, path: '/find-a-partner', name: 'Find a partner' },
+			{ id: 45, path: '/meet-an-expert', name: 'Meet an expert' },
+		],
+	},
 	{
 		id: 4,
-		path: '#',
+		path: '/enterprise',
 		name: 'Contact',
 		submenu: [
 			{ id: 41, path: '/tutorials', name: 'Tutorials' },

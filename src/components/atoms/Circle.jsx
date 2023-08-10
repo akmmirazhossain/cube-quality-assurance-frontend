@@ -4,7 +4,7 @@ import React from 'react';
 import Heading from './Heading';
 
 const circleStyle = cva(
-	'relative md:absolute h-[250px] w-[250px] md:h-[385px] md:w-[385px] rounded-full border-4 border-white',
+	'relative lg:absolute h-[250px] w-[250px] md:h-[385px] md:w-[385px] rounded-full border-4 border-white',
 	{
 		variants: {
 			variant: {
@@ -12,10 +12,10 @@ const circleStyle = cva(
 				secondary: 'bg-secondary',
 			},
 			position: {
-				topLeft: 'md:-top-[240px] md:-left-[210px]',
-				topRight: 'md:-top-[240px] md:-right-[210px]',
-				bottomLeft: 'md:-bottom-[70px] md:-left-[300px]',
-				bottomRight: 'md:-bottom-[70px] md:-right-[300px]',
+				topLeft: 'lg:-top-[240px] lg:-left-[210px]',
+				topRight: 'lg:-top-[240px] lg:-right-[210px]',
+				bottomLeft: 'lg:-bottom-[70px] lg:-left-[300px]',
+				bottomRight: 'lg:-bottom-[70px] lg:-right-[300px]',
 			},
 		},
 	},

@@ -1,11 +1,32 @@
 import Image from 'next/image';
 import { BiSolidDownArrow } from 'react-icons/bi';
-import { useLanguageSelectContext } from '@/context/LanguageSelectProvider';
+import { useTranslation } from 'react-i18next';
+import { useEffect, useState } from 'react';
+import { LanguageList } from '@/constants/constants';
 
 const LanguageSelect = ({ footer = false, header = false }) => {
-	let languageSelectProps = useLanguageSelectContext();
-	let { selectedLanguage, isListOpen, LanguageList, handleLanguageChange, handleSelectClick } =
-		languageSelectProps;
+	let { i18n } = useTranslation();
+	const [selectedLanguage, setSelectedLanguage] = useState(LanguageList[0]);
+	const [isListOpen, setIsListOpen] = useState(false);
+
+	const handleLanguageChange = async (event, language) => {
+		event.stopPropagation();
+		setSelectedLanguage(language);
+		setIsListOpen(false);
+		await i18n.changeLanguage(language.slug);
+		document.documentElement.dir = i18n.dir(i18n.language);
+		localStorage.setItem('language', i18n.language);
+	};
+
+	useEffect(() => {
+		let ActiveLanguage = LanguageList.filter((item) => item.slug === i18n.language);
+		setSelectedLanguage(ActiveLanguage[0]);
+		console.log('rendering');
+	}, []);
+
+	const handleSelectClick = () => {
+		setIsListOpen(!isListOpen);
+	};
 
 	return (
 		<div className="relative inline-block w-full" onClick={handleSelectClick}>

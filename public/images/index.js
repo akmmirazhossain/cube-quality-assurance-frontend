@@ -22,6 +22,8 @@ import Arabic from './language/Arabic.png';
 //Shapes
 import HalfRound from './shapes/HalfRound.png';
 import RTLAppModulesGrayBg from './shapes/RTLAppModulesGrayBg.png';
+import CommunityQA from './shapes/Community-QA.png';
+import RtlCommunityQA from './shapes/Rtl-Community-QA.png';
 
 //inspection manager moduel page images
 import MacbookPro from './macbook-pro.png';
@@ -34,6 +36,7 @@ import Partners from './icon/Partners.png';
 
 //community page
 import PersonGroup from './group/PersonGroup.png';
+import RtlPersonGroup from './group/RtlPersonGroup.png';
 
 //service partner
 import Sapentia from './icon/Sapentia.png';
@@ -68,7 +71,10 @@ export {
 	Oasis,
 	Partners,
 	PersonGroup,
+	RtlPersonGroup,
 	Sapentia,
 	TT,
 	RTLAppModulesGrayBg,
+	CommunityQA,
+	RtlCommunityQA,
 };
