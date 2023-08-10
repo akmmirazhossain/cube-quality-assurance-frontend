@@ -6,7 +6,7 @@ import { isRTL } from '@/constants/utils';
 
 const LogoPrimary = () => {
 	return (
-		<div className="relative flex-auto md:w-[557px] ">
+		<div className="relative flex-auto md:w-[290px]  lg:w-[420px] xl:w-[557px] ">
 			<div
 				className={`relative h-[470px] ${
 					isRTL() ? "bg-[url('/images/logoBackRTL.png')]" : "bg-[url('/images/logoBack.png')]"
@@ -14,11 +14,11 @@ const LogoPrimary = () => {
 			>
 				<div
 					className={`relative ${
-						isRTL() ? 'right-[33%]' : 'left-[33%]'
-					} top-[32%] h-[110px] w-[171px]`}
+						isRTL() ? 'right-[33%]' : 'md:left-[38%] lg:left-[36%]'
+					} md:top-[22%] md:w-[171px]  lg:top-[36%]`}
 				>
 					<Link href={'/'}>
-						<Image src={Logo} className="h-full w-full" alt="Quality Assurance" />
+						<Image src={Logo} className="md:w-[90px] lg:h-full lg:w-full" alt="Quality Assurance" />
 					</Link>
 				</div>
 			</div>

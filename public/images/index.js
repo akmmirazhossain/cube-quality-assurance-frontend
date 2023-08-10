@@ -18,6 +18,7 @@ import LowerSectionVArt from './icon/LowerSectionVArt.png';
 import RtlLowerSectionVArt from './icon/RtlLowerSectionVArt.png';
 import English from './language/English.png';
 import Arabic from './language/Arabic.png';
+import VideoPlayer from './videoplayer.png';
 
 //Shapes
 import HalfRound from './shapes/HalfRound.png';
@@ -77,4 +78,5 @@ export {
 	RTLAppModulesGrayBg,
 	CommunityQA,
 	RtlCommunityQA,
+	VideoPlayer,
 };
