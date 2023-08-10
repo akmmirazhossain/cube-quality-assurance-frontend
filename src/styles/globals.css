@@ -69,11 +69,11 @@ html {
 		margin-bottom: 0;
 	}
 }
-.container {
+/* .container {
 	position: relative;
 	max-width: 1440px;
 	margin: 0 auto;
-}
+} */
 
 .ReactCollapse--collapse {
 	transition: height 500ms;
