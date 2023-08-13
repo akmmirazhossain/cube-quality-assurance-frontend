@@ -1,5 +1,7 @@
 import { isRTL } from '@/constants/utils';
 import leaderboard from '@/data/leaderboard';
+import Image from 'next/image';
+import { VideoPlayer } from '../../../public/images';
 
 const TutorialSection = () => {
 	return (
@@ -32,7 +34,7 @@ const TutorialSection = () => {
 					<div className="relative col-span-2 mx-auto w-full md:px-8">
 						{/* video player */}
 						{/* eslint-disable-next-line jsx-a11y/alt-text, @next/next/no-img-element */}
-						<img className="w-full md:w-full" src="/images/videoplayer.png" />
+						<Image className="w-full md:w-full" src={VideoPlayer} alt="video player" />
 
 						<div className="mt-6 flex flex-col  md:flex-row md:justify-between">
 							{/* dropdowns */}

@@ -10,7 +10,7 @@ import Image from 'next/image';
 const AppModules = () => {
 	return (
 		<div className="container relative w-full overflow-hidden">
-			<div className="relative p-10">
+			<div className="relative">
 				{/* AppsModule Heading */}
 				<AppModuleHeaderItem />
 				{/* Apps Module List */}
