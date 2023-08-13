@@ -10,7 +10,7 @@ const OnePlatform = () => {
 	return (
 		<div className="bg-solitude">
 			<div className="container md:py-10 ">
-				<div className=" flex flex-col items-center justify-center gap-4 py-4 sm:flex-row md:py-12 lg:grid-cols-6 ">
+				<div className=" flex flex-col items-center justify-center gap-4 py-4 sm:flex-row md:py-0 lg:grid-cols-6 ">
 					<div className="col-start-2 col-end-4 flex justify-end md:w-1/2 md:pe-20 ">
 						<div className=" h-[210px] w-[210px] rounded-full bg-secondary p-4 md:h-[275px] md:w-[275px]"></div>
 					</div>
