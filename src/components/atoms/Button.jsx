@@ -2,7 +2,7 @@ import { cn } from '@/constants/utils';
 import { cva } from 'class-variance-authority';
 import Link from 'next/link';
 import React from 'react';
-const buttonVariant = cva('border-0 rounded-lg text-base text-white font-medium h-auto', {
+const buttonVariant = cva('border-0 rounded-xl text-base text-white font-medium h-auto', {
 	variants: {
 		variant: {
 			primary: 'bg-primary',
