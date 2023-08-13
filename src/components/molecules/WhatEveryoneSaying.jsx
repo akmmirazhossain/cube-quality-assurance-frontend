@@ -14,19 +14,19 @@ const WhatEveryonesSaying = () => {
 				
 			</div> */}
 
-			<div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+			<div className="flex flex-col items-center justify-center gap-4 md:flex-row">
 				{WhatEveryonesSayingList.map((item, index) => (
 					<div
 						key={index}
-						className="flex h-72 w-72 flex-col items-center rounded-full bg-primary p-5 text-center text-white sm:h-52 sm:w-52 sm:p-2 md:h-60 md:w-60 lg:h-[20rem] lg:w-[20rem] xl:h-[22rem] xl:w-[22rem]"
+						className="flex h-72 w-72 flex-col items-center rounded-full bg-primary p-5 text-center text-white sm:h-52 sm:w-52 sm:p-2 md:h-[12rem] md:w-[12rem] lg:h-[17rem] lg:w-[17rem] xl:h-[22rem] xl:w-[22rem]"
 					>
-						<p className="text-md flex flex-1  justify-center px-3 pt-10 font-light leading-6 sm:text-xs md:text-sm lg:px-6 lg:pt-14 lg:text-[1.1rem] lg:leading-7 xl:text-[1.1rem] xl:leading-8">
+						<p className="text-md flex flex-1  justify-center px-3 pt-6 font-light leading-6 sm:text-xs md:text-[12px] lg:px-6 lg:pt-12 lg:text-[14px] lg:leading-5 xl:text-[1.1rem] xl:leading-8">
 							{item.quote}
 						</p>
 
 						<p
 							dangerouslySetInnerHTML={{ __html: item.identity }}
-							className="items-top xl:text-md flex flex-1 justify-center pt-2 text-xs leading-tight sm:text-[0.6rem] md:text-[0.65rem] lg:text-sm"
+							className="items-top xl:text-md flex flex-1 justify-center pt-2 text-xs leading-tight sm:text-[0.6rem] md:text-[0.5rem] lg:text-[11px]"
 						></p>
 					</div>
 				))}
