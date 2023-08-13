@@ -9,10 +9,10 @@ const OnePlatform = () => {
 	let { t } = useTranslation();
 	return (
 		<div className="bg-solitude">
-			<div className="container  py-10 ">
-				<div className=" flex flex-col items-center justify-center gap-4 py-12 sm:flex-row lg:grid-cols-6 ">
-					<div className="col-start-2 col-end-4 flex justify-center md:w-1/2 ">
-						<div className=" h-[203px] w-[203px] rounded-full bg-secondary p-4 md:h-[303px] md:w-[303px]"></div>
+			<div className="container md:py-10 ">
+				<div className=" flex flex-col items-center justify-center gap-4 py-4 sm:flex-row md:py-12 lg:grid-cols-6 ">
+					<div className="col-start-2 col-end-4 flex justify-end md:w-1/2 md:pe-20 ">
+						<div className=" h-[210px] w-[210px] rounded-full bg-secondary p-4 md:h-[275px] md:w-[275px]"></div>
 					</div>
 					<div className="col-start-4  col-end-6 md:w-1/2">
 						<p className="text-lg font-light text-secondary md:text-2xl md:leading-[38px] ">

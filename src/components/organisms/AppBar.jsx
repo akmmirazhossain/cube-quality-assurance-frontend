@@ -19,7 +19,7 @@ const AppBar = () => {
 		<div className="bg-solitude">
 			<div className="container">
 				{/* Desktp Navigation */}
-				<div className="hidden lg:block">
+				<div className="hidden rounded-xl lg:block">
 					<div className={`grid grid-cols-2`}>
 						{router.pathname === '/' ? <LogoPrimary /> : <LogoSecondary />}
 
@@ -39,7 +39,7 @@ const AppBar = () => {
 
 				{/* Mobile Navigation */}
 				<div className="relative z-10 flex w-full place-items-center justify-between py-5 align-middle lg:hidden">
-					<div className=" max-w-sm">
+					<div className="max-w-sm">
 						<Link href={'/'} className="h-auto w-full">
 							<Image src={LogoSecondaryIcon} className="w-full" alt={'QA Logo'} />
 						</Link>
@@ -76,7 +76,7 @@ const AppBar = () => {
 							href="/signin"
 							className="font-normal text-secondary hover:text-primary active:text-primary"
 						>
-							Signin
+							Sign In
 						</Link>
 						<Button href={'demo'} size={'small'} className={`h-auto`}>
 							Get Demo
