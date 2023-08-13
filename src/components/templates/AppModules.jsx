@@ -20,7 +20,7 @@ const AppModules = () => {
 				<AppModulePlans />
 
 				{/* Background Vector */}
-				<div className="relative hidden h-full w-full md:block">
+				<div className="relative hidden h-full w-full xl:block">
 					<div
 						className={`absolute -top-96 ${
 							isRTL() ? 'left-20' : 'right-20'

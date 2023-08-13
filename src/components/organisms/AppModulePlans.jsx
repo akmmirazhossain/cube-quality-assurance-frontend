@@ -7,7 +7,7 @@ const AppModulePlans = () => {
 		<>
 			<PlanHeader />
 			<div className="relative">
-				<div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-0">
+				<div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:gap-0">
 					<RegularPlan />
 					<EnterprisePlan />
 				</div>

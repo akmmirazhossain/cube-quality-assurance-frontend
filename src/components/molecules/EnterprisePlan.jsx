@@ -9,11 +9,11 @@ const EnterprisePlan = () => {
 	let { t } = useTranslation();
 	return (
 		<div className="h-full">
-			<div className={`${isRTL() ? 'md:rtl-module-skew' : 'md:module-skew'} bg-primary`}>
+			<div className={`${isRTL() ? 'xl:rtl-module-skew' : 'xl:module-skew'} bg-primary`}>
 				<div className="relative">
 					<div
 						className={`${
-							isRTL() ? 'md:rtl-module-skew-inner md:-right-32' : 'md:module-skew-inner md:-left-32'
+							isRTL() ? 'xl:rtl-module-skew-inner xl:-right-32' : 'xl:module-skew-inner xl:-left-32'
 						} relative p-5 px-10 text-white  md:px-0`}
 					>
 						<div className="relative w-full text-center">
@@ -24,7 +24,7 @@ const EnterprisePlan = () => {
 								with custom branding and on-demand support for the following modules:
 							</p>
 						</div>
-						<div className={`ml-0 pl-36 pt-4 ${isRTL ? 'md:mr-30' : 'md:ml-30'}  md:pt-8`}>
+						<div className={`ml-0 ps-24 pt-4 lg:ps-36 ${isRTL ? 'md:mr-30' : 'md:ml-30'}  md:pt-8`}>
 							<ul className="list-disc px-8 md:px-0">
 								{AppModuleList.map(({ id, title }) => (
 									<li key={id}>{title}</li>

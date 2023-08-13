@@ -10,7 +10,7 @@ const AppFeatureList = () => {
 					<AppModuleCard key={item.id} item={item} button={true} />
 				))}
 			</div> */}
-			<div className="flex flex-wrap justify-evenly  lg:pl-52 [&>*]:w-4/5 [&>*]:px-2 [&>*]:py-4 [&>*]:sm:w-2/5 [&>*]:lg:w-1/5">
+			<div className="flex flex-wrap justify-evenly  xl:ps-52 [&>*]:w-4/5 [&>*]:px-2 [&>*]:py-4 [&>*]:sm:w-2/5 [&>*]:lg:w-1/5">
 				{AppModuleList.map((item) => (
 					<AppModuleCard key={item.id} item={item} button={true} />
 				))}

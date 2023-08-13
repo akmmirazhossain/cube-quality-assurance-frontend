@@ -5,9 +5,9 @@ const PlanHeader = () => {
 	return (
 		<div className="max-w-screen relative min-h-[280px]">
 			<div
-				className={`relative inset-0 h-full w-full md:absolute ${
-					isRTL() ? 'md:right-[50%]' : ' md:left-[50%]'
-				} md:max-w-[550px]`}
+				className={`relative inset-0 h-full w-full py-5 text-center xl:absolute ${
+					isRTL() ? 'xl:right-[50%]' : 'xl:left-[50%]'
+				} w-full xl:max-w-[550px]`}
 			>
 				<div className="mx-auto w-full md:w-full">
 					<div className="text-center text-secondary">
