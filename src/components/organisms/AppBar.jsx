@@ -19,12 +19,12 @@ const AppBar = () => {
 		<div className="bg-solitude">
 			<div className="container">
 				{/* Desktp Navigation */}
-				<div className="hidden rounded-xl lg:block">
+				<div className="hidden rounded-xl xl:block">
 					<div className={`grid grid-cols-2`}>
 						{router.pathname === '/' ? <LogoPrimary /> : <LogoSecondary />}
 
 						{/* Desktop Navigation */}
-						<div className="relative hidden h-auto align-middle lg:block">
+						<div className="relative hidden h-auto align-middle xl:block">
 							<div className="flex place-items-center justify-between">
 								<div className="flex-none">
 									<MenuBar />
@@ -38,7 +38,7 @@ const AppBar = () => {
 				</div>
 
 				{/* Mobile Navigation */}
-				<div className="relative z-10 flex w-full place-items-center justify-between py-5 align-middle lg:hidden">
+				<div className="relative z-10 flex w-full place-items-center justify-between py-5 align-middle xl:hidden">
 					<div className="max-w-sm">
 						<Link href={'/'} className="h-auto w-full">
 							<Image src={LogoSecondaryIcon} className="w-full" alt={'QA Logo'} />
@@ -56,7 +56,7 @@ const AppBar = () => {
 			{/* Shwoing mobile navigation */}
 
 			<div
-				className={`fixed z-10 h-full w-screen bg-solitude duration-500 ease-in-out lg:hidden ${
+				className={`fixed z-10 h-full w-screen bg-solitude duration-500 ease-in-out xl:hidden ${
 					mobileMenu ? 'translate-y-0' : 'translate-y-full'
 				}`}
 			>
@@ -82,9 +82,9 @@ const AppBar = () => {
 							Get Demo
 						</Button>
 					</div>
-					<div className="my-3">
+					{/* <div className="my-3">
 						<LanguageSelect header="true" />
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>

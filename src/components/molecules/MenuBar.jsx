@@ -17,7 +17,7 @@ const MenuBar = () => {
 	};
 
 	return (
-		<div className={`relative ${isRtl ? 'lg:-mr-[150px]' : 'lg:-ml-[150px]'}`}>
+		<div className={`relative ${isRtl ? 'xl:-mr-[150px]' : 'xl:-ml-[150px]'}`}>
 			<div className="relative z-50 mx-auto w-full">
 				<div className="relative w-full py-5">
 					<div className="flex flex-col gap-4 pb-3 sm:px-3 md:flex-row md:gap-1 md:px-0 lg:gap-4">

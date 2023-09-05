@@ -14,12 +14,12 @@ const MenuRightAction = () => {
 			<Button href={'demo'} size={'small'} className={`h-auto`}>
 				{t('getDemo')}
 			</Button>
-			<div className="relative text-center">
+			{/* <div className="relative text-center">
 				<div className="text-sm font-normal">
 					<span>Language</span>
 				</div>
 				<LanguageSelect showTitle={false} />
-			</div>
+			</div> */}
 		</div>
 	);
 };

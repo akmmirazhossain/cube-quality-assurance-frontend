@@ -14,8 +14,8 @@ const RegularPlan = () => {
 			} bg-secondary text-white`}
 		>
 			<div className={`${isRTL() ? 'xl:rtl-module-skew-inner' : 'xl:module-skew-inner'} relative`}>
-				<div className="mx-auto w-full lg:w-2/3">
-					<div className="relative w-full p-2 text-center">
+				<div className="mx-auto w-full lg:w-4/5">
+					<div className="relative w-full pr-20 pt-14 text-center">
 						<Heading tag="p" variant={'white'} size={'md'} weight={'medium'}>
 							Regular
 						</Heading>

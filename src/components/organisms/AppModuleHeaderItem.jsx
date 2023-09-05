@@ -8,8 +8,8 @@ import { useTranslation } from 'react-i18next';
 const AppModuleHeaderItem = () => {
 	let { t } = useTranslation();
 	return (
-		<div className=" flex flex-col items-center justify-center gap-4 py-12 sm:flex-row lg:grid-cols-6 ">
-			<div className="col-start-2 flex justify-center md:w-1/2">
+		<div className="flex flex-col items-center justify-center gap-4 py-12 sm:flex-row lg:grid-cols-6">
+			<div className="col-start-2 flex justify-end md:w-1/2 md:pe-20">
 				<div className="h-64 w-64 rounded-full bg-secondary p-4 md:h-[303px] md:w-[303px]">
 					<div className="flex h-full w-full items-center justify-center">
 						<div className="flex items-center justify-center ">
@@ -28,7 +28,7 @@ const AppModuleHeaderItem = () => {
 					</div>
 				</div>
 			</div>
-			<div className="col-start-4  col-end-6 md:w-1/2">
+			<div className="col-start-4 col-end-6 md:w-1/2">
 				<Heading variant={'secondary'}>Apps Module</Heading>
 				<div className="py-4">
 					<p className="text-xl font-light leading-[28px] text-secondary">

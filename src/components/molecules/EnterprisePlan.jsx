@@ -14,13 +14,13 @@ const EnterprisePlan = () => {
 					<div
 						className={`${
 							isRTL() ? 'xl:rtl-module-skew-inner xl:-right-32' : 'xl:module-skew-inner xl:-left-32'
-						} relative p-5 px-10 text-white  md:px-0`}
+						} relative px-10 pt-10 text-white  md:px-0`}
 					>
 						<div className="relative w-full text-center">
 							<p className="text-3xl font-semibold">Enterprise</p>
 							<span className="text-base font-light">for small business chain</span>
 
-							<p className="xl:text-md text-sm md:text-lg">
+							<p className="xl:text-md px-5 text-sm md:text-lg">
 								with custom branding and on-demand support for the following modules:
 							</p>
 						</div>
@@ -31,7 +31,7 @@ const EnterprisePlan = () => {
 								))}
 							</ul>
 						</div>
-						<div className="my-8 text-center">
+						<div className="my-8 pl-10 text-center">
 							<Button variant={'secondary'} size={isRTL() ? 'medium' : 'small'}>
 								{t('getStarted')}
 							</Button>

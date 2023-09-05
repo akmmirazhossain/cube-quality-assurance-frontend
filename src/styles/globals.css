@@ -43,11 +43,11 @@ html {
 	/* -346px -779px 0 346px #523249; */
 	.regular-skew {
 		transform: skew(25.9deg);
-		box-shadow: -563px -1076px 0 563px #523249;
+		box-shadow: -620px -1076px 0 620px #523249;
 		border-radius: 0 0 0 20px;
 	}
 	.rtl-regular-skew {
-		transform: skew(-29.4deg);
+		transform: skew(-25.4deg);
 		box-shadow: 286px -831px 0 286px #523249;
 		border-radius: 0 0 10px 0;
 	}
