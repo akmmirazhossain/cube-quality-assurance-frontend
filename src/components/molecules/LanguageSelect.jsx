@@ -77,7 +77,7 @@ const LanguageSelect = ({ footer = false, header = false }) => {
 					</span>
 				)}
 			</div>
-			{isListOpen && (
+			{/* {isListOpen && (
 				<ul
 					className={`absolute left-0 z-10 mt-2 place-content-center rounded-lg border  text-black  ${
 						footer || header ? 'w-full border-gray-300 bg-white shadow-md' : ''
@@ -87,17 +87,17 @@ const LanguageSelect = ({ footer = false, header = false }) => {
 					{LanguageList.map((language) => (
 						<li
 							key={language.id}
-							className="cursor-pointer px-2 py-2 hover:rounded-lg hover:bg-gray-100"
+							className="px-2 py-2 cursor-pointer hover:rounded-lg hover:bg-gray-100"
 							onClick={(e) => handleLanguageChange(e, language)}
 						>
 							<span className="flex items-center gap-2">
-								<Image src={language.icon} alt={language.title} className="mr-2 h-6 w-6" />
+								<Image src={language.icon} alt={language.title} className="w-6 h-6 mr-2" />
 								{(footer || header) && language.title}
 							</span>
 						</li>
 					))}
 				</ul>
-			)}
+			)} */}
 		</div>
 	);
 };

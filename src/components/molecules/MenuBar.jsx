@@ -2,7 +2,7 @@ import { NavList } from '@/constants/constants';
 import { isRTL } from '@/constants/utils';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 import { BiSolidDownArrow } from 'react-icons/bi';
 
 const MenuBar = () => {

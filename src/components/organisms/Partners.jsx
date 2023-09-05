@@ -5,7 +5,7 @@ import { PartnersList } from '@/constants/constants';
 const PartnersSection = () => {
 	return (
 		<div className=" grid justify-items-center bg-dark py-6 lg:flex lg:items-center lg:justify-evenly xl:px-[14%]">
-			{PartnersList.map(({ id, title, icon }, index) => (
+			{PartnersList.map(({ id, title, icon }) => (
 				<div className="p-3" key={id}>
 					<Image src={icon} alt={title} width={135} className="object-cover" />
 				</div>

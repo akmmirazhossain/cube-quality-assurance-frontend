@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { Button } from '../atoms/Button';
-import LanguageSelect from './LanguageSelect';
+// import LanguageSelect from './LanguageSelect';
 import { useTranslation } from 'react-i18next';
 
 const MenuRightAction = () => {

@@ -9,7 +9,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { LogoSecondaryIcon } from '../../../public/images';
 import { TfiClose } from 'react-icons/tfi';
-import LanguageSelect from '../molecules/LanguageSelect';
+// import LanguageSelect from '../molecules/LanguageSelect';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { isRTL } from '@/constants/utils';
 const AppBar = () => {
