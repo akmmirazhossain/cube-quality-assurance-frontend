@@ -15,7 +15,7 @@ const Community = () => {
 			<CommunityQaDocumentation />
 			<SupportForm />
 			<CommunityLookingForService />
-			<Calender />
+			{/* <Calender /> */}
 			<CommunityFaq />
 		</>
 	);
