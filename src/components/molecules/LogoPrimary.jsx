@@ -2,7 +2,7 @@ import React from 'react';
 import { Logo } from '../../../public/images';
 import Link from 'next/link';
 import Image from 'next/image';
-import { isRTL } from '@/constants/utils';
+// import { isRTL } from '@/constants/utils';
 
 const LogoPrimary = () => {
 	return (
