@@ -30,7 +30,7 @@ To begin leveraging the capabilities of Web Quality Analyzer, follow these simpl
 
 ```bash
 # Clone the repository
-git clone https://github.com/akmmirazhossain/frontend-web-cube-quality-assurance
+git clone https://github.com/akmmirazhossain/cube-quality-assurance-frontend
 
 # Navigate to the project directory
 cd frontend-web-cube-quality-assurance
